@@ -1,0 +1,325 @@
+{
+ "generated": "sample",
+ "tools": [
+  {
+   "name": "Neovim",
+   "category": "Editors",
+   "url": "#",
+   "commenters": 70,
+   "first_year": "2012",
+   "last_year": "2026",
+   "recent": 20,
+   "comments": [
+    {
+     "id": "1",
+     "author": "sample_user0",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Neovim appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user1",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Neovim appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user2",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Neovim appear here after you run the scanner."
+    }
+   ]
+  },
+  {
+   "name": "tmux",
+   "category": "Terminal",
+   "url": "#",
+   "commenters": 63,
+   "first_year": "2012",
+   "last_year": "2026",
+   "recent": 15,
+   "comments": [
+    {
+     "id": "1",
+     "author": "sample_user0",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning tmux appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user1",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning tmux appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user2",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning tmux appear here after you run the scanner."
+    }
+   ]
+  },
+  {
+   "name": "SQLite",
+   "category": "Data",
+   "url": "#",
+   "commenters": 56,
+   "first_year": "2012",
+   "last_year": "2026",
+   "recent": 10,
+   "comments": [
+    {
+     "id": "1",
+     "author": "sample_user0",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning SQLite appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user1",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning SQLite appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user2",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning SQLite appear here after you run the scanner."
+    }
+   ]
+  },
+  {
+   "name": "ripgrep",
+   "category": "Terminal",
+   "url": "#",
+   "commenters": 49,
+   "first_year": "2012",
+   "last_year": "2026",
+   "recent": 14,
+   "comments": [
+    {
+     "id": "1",
+     "author": "sample_user0",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning ripgrep appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user1",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning ripgrep appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user2",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning ripgrep appear here after you run the scanner."
+    }
+   ]
+  },
+  {
+   "name": "Tailscale",
+   "category": "Infra",
+   "url": "#",
+   "commenters": 42,
+   "first_year": "2012",
+   "last_year": "2026",
+   "recent": 9,
+   "comments": [
+    {
+     "id": "1",
+     "author": "sample_user0",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Tailscale appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user1",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Tailscale appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user2",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Tailscale appear here after you run the scanner."
+    }
+   ]
+  },
+  {
+   "name": "Obsidian",
+   "category": "Productivity",
+   "url": "#",
+   "commenters": 35,
+   "first_year": "2012",
+   "last_year": "2026",
+   "recent": 4,
+   "comments": [
+    {
+     "id": "1",
+     "author": "sample_user0",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Obsidian appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user1",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Obsidian appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user2",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Obsidian appear here after you run the scanner."
+    }
+   ]
+  },
+  {
+   "name": "uv",
+   "category": "Dev tooling",
+   "url": "#",
+   "commenters": 28,
+   "first_year": "2012",
+   "last_year": "2026",
+   "recent": 8,
+   "comments": [
+    {
+     "id": "1",
+     "author": "sample_user0",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning uv appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user1",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning uv appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user2",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning uv appear here after you run the scanner."
+    }
+   ]
+  },
+  {
+   "name": "ffmpeg",
+   "category": "Utilities",
+   "url": "#",
+   "commenters": 21,
+   "first_year": "2012",
+   "last_year": "2026",
+   "recent": 3,
+   "comments": [
+    {
+     "id": "1",
+     "author": "sample_user0",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning ffmpeg appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user1",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning ffmpeg appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user2",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning ffmpeg appear here after you run the scanner."
+    }
+   ]
+  },
+  {
+   "name": "Magit",
+   "category": "Git",
+   "url": "#",
+   "commenters": 14,
+   "first_year": "2012",
+   "last_year": "2026",
+   "recent": 1,
+   "comments": [
+    {
+     "id": "1",
+     "author": "sample_user0",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Magit appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user1",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Magit appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user2",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Magit appear here after you run the scanner."
+    }
+   ]
+  },
+  {
+   "name": "Syncthing",
+   "category": "Infra",
+   "url": "#",
+   "commenters": 7,
+   "first_year": "2012",
+   "last_year": "2026",
+   "recent": 2,
+   "comments": [
+    {
+     "id": "1",
+     "author": "sample_user0",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Syncthing appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user1",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Syncthing appear here after you run the scanner."
+    },
+    {
+     "id": "1",
+     "author": "sample_user2",
+     "date": "2026-01-01",
+     "story": "Sample thread",
+     "snippet": "Placeholder comment text. Real comments mentioning Syncthing appear here after you run the scanner."
+    }
+   ]
+  }
+ ]
+}

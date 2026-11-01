@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HackerTools</title>
+<meta name="description" content="Developer tools that Hacker News commenters actually recommend — counted by distinct commenters, each linked back to the comments.">
+<style>
+:root{
+  --bg:#f6f6ef; --panel:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e4e4da;
+  --accent:#ff6600; --accent-soft:#fff1e6; --chip:#efefe6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121212; --panel:#1b1b1b; --ink:#ececec; --muted:#9a9a9a; --line:#2c2c2c;
+    --accent:#ff7a1a; --accent-soft:#2a1a0e; --chip:#252525;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121212; --panel:#1b1b1b; --ink:#ececec; --muted:#9a9a9a; --line:#2c2c2c;
+  --accent:#ff7a1a; --accent-soft:#2a1a0e; --chip:#252525;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{width:34px;height:34px;border:2px solid var(--accent);color:var(--accent);
+  display:grid;place-items:center;font-weight:800;font-family:ui-monospace,Menlo,monospace}
+h1{margin:0;font-size:26px;letter-spacing:-.02em}
+h1 span{color:var(--accent)}
+.tag{color:var(--muted);margin:6px 0 20px;max-width:640px}
+.tag a{color:inherit}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+input[type=search]{flex:1;min-width:200px;padding:10px 12px;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink);border-radius:6px;font:inherit}
+select{padding:9px 10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);
+  border-radius:6px;font:inherit}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--ink);padding:4px 10px;
+  border-radius:999px;font-size:13px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+.meta{font-size:13px;color:var(--muted);margin-bottom:10px;font-family:ui-monospace,Menlo,monospace}
+.notice{background:var(--accent-soft);border:1px solid var(--accent);padding:10px 12px;
+  border-radius:6px;font-size:14px;margin-bottom:14px}
+ol{list-style:none;padding:0;margin:0}
+li.tool{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:14px 16px;margin-bottom:10px}
+.row{display:flex;gap:14px;align-items:baseline}
+.rank{color:var(--muted);font-family:ui-monospace,Menlo,monospace;min-width:2.4em;text-align:right}
+.main{flex:1;min-width:0}
+.name{font-weight:700;font-size:17px;color:var(--ink);text-decoration:none}
+.name:hover{color:var(--accent)}
+.cat{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:4px;
+  padding:1px 6px;margin-left:8px;white-space:nowrap}
+.count{color:var(--accent);font-family:ui-monospace,Menlo,monospace;font-size:13px;margin-top:2px}
+.count .yrs{color:var(--muted)}
+.hot{background:var(--accent);color:#fff;border-radius:4px;font-size:11px;padding:1px 6px;margin-left:6px;
+  font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-weight:700}
+.quote{margin:10px 0 0;padding:8px 12px;border-left:3px solid var(--accent);color:var(--ink);
+  font-size:14px;background:var(--accent-soft);border-radius:0 6px 6px 0}
+.quote small{display:block;color:var(--muted);margin-top:4px;font-size:12px}
+.quote a{color:var(--muted)}
+details{margin-top:8px}
+summary{cursor:pointer;color:var(--muted);font-size:13px}
+details ul{padding-left:18px;margin:6px 0 0}
+details li{font-size:13px;margin:6px 0;color:var(--muted)}
+details li a{color:var(--ink)}
+.more{display:block;margin:16px auto;padding:10px 18px;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink);border-radius:6px;font:inherit;cursor:pointer}
+footer{margin-top:40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+footer a{color:inherit}
+@media (max-width:520px){ .rank{min-width:1.8em} .cat{display:inline-block;margin:4px 0 0} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">&gt;_</div>
+    <h1>Hacker<span>Tools</span></h1>
+  </header>
+  <p class="tag">Developer tools that Hacker News commenters actually recommend, ranked by how many <b>different people</b> vouched for them. Every tool links back to the comments. Inspired by <a href="https://x.com/karpathy" target="_blank" rel="noopener">@karpathy</a>'s HackerTube and <a href="https://hackerbooks.org" target="_blank" rel="noopener">HackerBooks</a>.</p>
+
+  <div id="notice"></div>
+
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search tools, e.g. terminal, postgres, notes…" autocomplete="off">
+    <select id="sort" aria-label="Sort">
+      <option value="commenters">Most recommended</option>
+      <option value="recent">Trending (last ~2 yrs)</option>
+      <option value="name">A → Z</option>
+    </select>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="meta" id="meta">Loading…</div>
+  <ol id="list"></ol>
+  <button class="more" id="more" hidden>Show more</button>
+
+  <footer>
+    Counts distinct HN commenters whose comment names the tool alongside a recommendation phrase ("I use", "switched to", "recommend"…). It's a signal, not a verdict. Data: Hacker News via <a href="https://hn.algolia.com/api" target="_blank" rel="noopener">HN Algolia API</a> · <a href="tools.json">download tools.json</a>
+    <span id="gen"></span>
+  </footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const PAGE = 40;
+let all = [], cat = "All", shown = PAGE;
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const hn = id => `https://news.ycombinator.com/item?id=${encodeURIComponent(id)}`;
+
+function remember(k, v){ try{ localStorage.setItem("ht_"+k, v) }catch(e){} }
+function recall(k){ try{ return localStorage.getItem("ht_"+k) }catch(e){ return null } }
+
+async function load(){
+  for (const [file, sample] of [["tools.json", false], ["sample.json", true]]){
+    try{
+      const r = await fetch(file, {cache:"no-cache"});
+      if (!r.ok) continue;
+      const d = await r.json();
+      if (sample) $("#notice").innerHTML = `<div class="notice"><b>Sample data.</b> These entries are placeholders to preview the layout. Run <code>python3 scan_tools.py</code> to generate the real <code>tools.json</code>.</div>`;
+      if (d.generated) $("#gen").textContent = ` · updated ${d.generated.slice(0,10)}`;
+      return d.tools || [];
+    }catch(e){}
+  }
+  $("#notice").innerHTML = `<div class="notice">No data yet. Run <code>python3 scan_tools.py</code> next to this file.</div>`;
+  return [];
+}
+
+function chips(){
+  const cats = ["All", ...[...new Set(all.map(t => t.category))].sort()];
+  $("#chips").innerHTML = cats.map(c => {
+    const n = c === "All" ? all.length : all.filter(t => t.category === c).length;
+    return `<button class="chip" data-c="${esc(c)}" aria-pressed="${c===cat}">${esc(c)} <span style="opacity:.6">${n}</span></button>`;
+  }).join("");
+}
+
+function render(){
+  const q = $("#q").value.trim().toLowerCase();
+  const sort = $("#sort").value;
+  let rows = all.filter(t =>
+    (cat === "All" || t.category === cat) &&
+    (!q || (t.name + " " + t.category + " " + (t.comments||[]).map(c=>c.snippet).join(" ")).toLowerCase().includes(q))
+  );
+  rows.sort(sort === "name" ? (a,b)=>a.name.localeCompare(b.name)
+          : sort === "recent" ? (a,b)=>(b.recent-a.recent)||(b.commenters-a.commenters)
+          : (a,b)=>b.commenters-a.commenters);
+  const topRecent = [...all].sort((a,b)=>b.recent-a.recent).slice(0, Math.max(3, Math.round(all.length*0.1))).map(t=>t.name);
+
+  $("#meta").textContent = `${rows.length} tool${rows.length===1?"":"s"} · ${rows.reduce((s,t)=>s+t.commenters,0).toLocaleString()} recommendations`;
+  $("#list").innerHTML = rows.slice(0, shown).map((t,i) => {
+    const c = (t.comments||[])[0];
+    const yrs = t.first_year ? (t.first_year === t.last_year ? t.first_year : `${t.first_year}–${t.last_year}`) : "";
+    const others = (t.comments||[]).slice(1, 8);
+    return `<li class="tool">
+      <div class="row">
+        <div class="rank">${i+1}.</div>
+        <div class="main">
+          <a class="name" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.name)}</a><span class="cat">${esc(t.category)}</span>${topRecent.includes(t.name)&&t.recent>0?'<span class="hot">TRENDING</span>':""}
+          <div class="count">Recommended by ${t.commenters} HN commenter${t.commenters===1?"":"s"} <span class="yrs">${yrs?"· "+yrs:""}</span></div>
+          ${c ? `<blockquote class="quote">${esc(c.snippet)}<small>— ${esc(c.author)}, ${esc(c.date)} · <a href="${hn(c.id)}" target="_blank" rel="noopener">view comment</a></small></blockquote>` : ""}
+          ${others.length ? `<details><summary>${others.length} more comment${others.length===1?"":"s"}</summary><ul>${
+            others.map(o => `<li><a href="${hn(o.id)}" target="_blank" rel="noopener">${esc(o.author)}</a> · ${esc(o.date)}${o.story?` · in “${esc(o.story)}”`:""}<br>${esc(o.snippet)}</li>`).join("")
+          }</ul></details>` : ""}
+        </div>
+      </div>
+    </li>`;
+  }).join("");
+  $("#more").hidden = rows.length <= shown;
+}
+
+$("#chips").addEventListener("click", e => {
+  const b = e.target.closest(".chip"); if (!b) return;
+  cat = b.dataset.c; shown = PAGE; remember("cat", cat); chips(); render();
+});
+$("#q").addEventListener("input", () => { shown = PAGE; render(); });
+$("#sort").addEventListener("change", () => { shown = PAGE; remember("sort", $("#sort").value); render(); });
+$("#more").addEventListener("click", () => { shown += PAGE; render(); });
+
+(async () => {
+  all = await load();
+  const s = recall("sort"); if (s) $("#sort").value = s;
+  const c = recall("cat"); if (c && all.some(t => t.category === c)) cat = c;
+  chips(); render();
+})();
+</script>
+</body>
+</html>
