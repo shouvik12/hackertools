@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T18:05Z",
+ "generated": "2026-11-02T11:25Z",
  "source": "Hacker News comments via hn.algolia.com",
  "min_commenters": 2,
  "tools": [
@@ -126,10 +126,10 @@
    "name": "VS Code",
    "category": "Editors",
    "url": "https://code.visualstudio.com",
-   "commenters": 481,
+   "commenters": 480,
    "first_year": "2009",
    "last_year": "2026",
-   "recent": 378,
+   "recent": 377,
    "comments": [
     {
      "id": "50327660",
@@ -5362,11 +5362,20 @@
    "name": "Jellyfin",
    "category": "Self-hosted",
    "url": "https://jellyfin.org",
-   "commenters": 168,
+   "commenters": 167,
    "first_year": "2026",
    "last_year": "2026",
-   "recent": 168,
+   "recent": 167,
    "comments": [
+    {
+     "id": "50329633",
+     "author": "zeagle",
+     "date": "2026-11-01",
+     "points": 0,
+     "story": "Ask HN: Which TV do you recommend for privacy?",
+     "story_id": 50328896,
+     "snippet": "…a avr that handles inputs and 5.1.2 speakers  Nvidia shield with hdmi-cec to turn on/off the receiver and tv. Jellyfin, android tv app for cable company, YouTube sans ads and projectivy launcher (Google one sucks).  You…"
+    },
     {
      "id": "50254853",
      "author": "knowaveragejoe",
@@ -5465,15 +5474,6 @@
      "story": "An ad-free Android TV",
      "story_id": 50158942,
      "snippet": "Just try them, it's not a big investment as they all work with vanilla server. You will appreciate default Jellyfin client more :) I'm on Moonfin right now. I tested a few of them. They all looked super good, but turned…"
-    },
-    {
-     "id": "50161673",
-     "author": "triyambakam",
-     "date": "2026-10-20",
-     "points": 0,
-     "story": "An ad-free Android TV",
-     "story_id": 50158942,
-     "snippet": "I've been using Jellyfin for my family for years. But the number of clients is interesting. The web experience on a desktop/laptop is pretty much the only tolerable experience. And I appreciate that the alternative clien…"
     }
    ]
   },
@@ -8334,13 +8334,132 @@
    ]
   },
   {
+   "name": "DuckDB",
+   "category": "Data",
+   "url": "https://duckdb.org",
+   "commenters": 133,
+   "first_year": "2026",
+   "last_year": "2026",
+   "recent": 133,
+   "comments": [
+    {
+     "id": "50330730",
+     "author": "isaac-harvey",
+     "date": "2026-11-01",
+     "points": 0,
+     "story": "Show HN: Duckstring – Pull-orchestrated data pipelines on DuckDB",
+     "story_id": 50330726,
+     "snippet": "Hi HN, I'm Isaac. This is Duckstring, an open source data engineering platform, using DuckDB as the engine. I've built it to address some of the main frustrations I've had in my years as a data engineer: modularising log…"
+    },
+    {
+     "id": "50286591",
+     "author": "nikolay",
+     "date": "2026-10-29",
+     "points": 0,
+     "story": "Claude Code regularly sends each background agent’s transcript to its model",
+     "story_id": 50284255,
+     "snippet": "…an MCP, a WebMCP, text messaging. Built mostly on Cloudflare and with Ansible and OpenTofu. Runs also a local DuckDB database as I don't feel comfortable putting registry keys somewhere in the cloud, and so on. It is a s…"
+    },
+    {
+     "id": "50193943",
+     "author": "Nihilartikel",
+     "date": "2026-10-22",
+     "points": 0,
+     "story": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
+     "story_id": 50181136,
+     "snippet": "…to do work on multiple csv and excel files, joins and filters etc. I hate excel but am fine with SQL. With a duckdb session in dbeaver, I can literally select, project, and join the files on disk as if they were tables.…"
+    },
+    {
+     "id": "50192693",
+     "author": "CodeCompost",
+     "date": "2026-10-22",
+     "points": 0,
+     "story": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
+     "story_id": 50181136,
+     "snippet": "…ware of DataFrame, I am more familiar with SQL. So I used Python scripts in Jupyter to load Excel sheets into DuckDB, and then run queries in DuckDB. Eventually I export the data back to Excel or SQL Server. Not the most…"
+    },
+    {
+     "id": "50190310",
+     "author": "gopalv",
+     "date": "2026-10-22",
+     "points": 0,
+     "story": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
+     "story_id": 50181136,
+     "snippet": "> does duckdb support querying custom storage formats? No, this is still parquet being loaded in. The \"trick\" is running through sort order combinations which result in maximum packing in a Dremel style data format (like…"
+    },
+    {
+     "id": "50182776",
+     "author": "RobinL",
+     "date": "2026-10-21",
+     "points": 0,
+     "story": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
+     "story_id": 50181136,
+     "snippet": "…ructure, not because it performs better.  For instance people on Databricks can sometimes find it hard to use DuckDB on large machines, or they're just more familiar with Spark. For a new user who has flexibility over wh…"
+    },
+    {
+     "id": "50137019",
+     "author": "ashkankiani",
+     "date": "2026-10-18",
+     "points": 0,
+     "story": "A skeptic's first contact with Kubernetes (2024)",
+     "story_id": 50127572,
+     "snippet": "…e view, miller tree view, flat view, and inferred table view, and it makes editing JSON very easy too. Oh and duckdb can query against compressed json and jsonl at GB/s"
+    },
+    {
+     "id": "50091340",
+     "author": "pak9rabid",
+     "date": "2026-10-14",
+     "points": 0,
+     "story": "Same Job, Two Engines: InnoDB and Iceberg Internals",
+     "story_id": 50071466,
+     "snippet": "DuckDB is amazing. I swapped out some data analytics processing that was originally implemented with Python & Postgres to DuckDB and have been immensely pleased with the outcome.  Stuff that would take 6+ hours to do wit…"
+    },
+    {
+     "id": "50088838",
+     "author": "marcbpaul",
+     "date": "2026-10-14",
+     "points": 0,
+     "story": "Same Job, Two Engines: InnoDB and Iceberg Internals",
+     "story_id": 50071466,
+     "snippet": "DuckDB's come up a lot since I started my little journey to be honest. Everything I've read says you're absolutely right about the performance boost lol. It very well may be the next piece I check out, thank you."
+    },
+    {
+     "id": "50059694",
+     "author": "mootothemax",
+     "date": "2026-10-12",
+     "points": 0,
+     "story": "QGIS enacts moratorium on AI contributions",
+     "story_id": 50054751,
+     "snippet": "…pattern matching instinct too - spooky cos that's how I do stuff too. Great minds. For what it's worth, I use duckdb and its spatial stuff as my adapter. Works for my brain and if you force e.g. SQL files for each step,…"
+    },
+    {
+     "id": "50059001",
+     "author": "aynyc",
+     "date": "2026-10-12",
+     "points": 0,
+     "story": "Postgres isn't slow, your storage is",
+     "story_id": 50052163,
+     "snippet": "It doesn't. That's the issue. DuckDB for us is a pure read-only service pipe. We need other tools to ingest and write to parquet, which has its own limitation. SQLite does a great job to support single writer and multipl…"
+    },
+    {
+     "id": "50011324",
+     "author": "smithclay",
+     "date": "2026-10-08",
+     "points": 0,
+     "story": "DuckDB Ducklake",
+     "story_id": 49996149,
+     "snippet": "Don't think it's widely known or understood, but Ducklake doesn't require duckdb: it's just a (good) data lake spec that works in duckdb. There's a cool alternate rust/datafusion ecosystem initiative going on at  https:/…"
+    }
+   ]
+  },
+  {
    "name": "Tailscale",
    "category": "Infra",
    "url": "https://tailscale.com",
-   "commenters": 132,
+   "commenters": 131,
    "first_year": "2026",
    "last_year": "2026",
-   "recent": 132,
+   "recent": 131,
    "comments": [
     {
      "id": "50307815",
@@ -8449,125 +8568,6 @@
      "story": "Tailscale SSH: Investigation and remediation update",
      "story_id": 50264857,
      "snippet": "we'd love to hear about it at security@tailscale.com, we're happy to work from & with and credit early ideas as well."
-    }
-   ]
-  },
-  {
-   "name": "DuckDB",
-   "category": "Data",
-   "url": "https://duckdb.org",
-   "commenters": 132,
-   "first_year": "2026",
-   "last_year": "2026",
-   "recent": 132,
-   "comments": [
-    {
-     "id": "50286591",
-     "author": "nikolay",
-     "date": "2026-10-29",
-     "points": 0,
-     "story": "Claude Code regularly sends each background agent’s transcript to its model",
-     "story_id": 50284255,
-     "snippet": "…an MCP, a WebMCP, text messaging. Built mostly on Cloudflare and with Ansible and OpenTofu. Runs also a local DuckDB database as I don't feel comfortable putting registry keys somewhere in the cloud, and so on. It is a s…"
-    },
-    {
-     "id": "50193943",
-     "author": "Nihilartikel",
-     "date": "2026-10-22",
-     "points": 0,
-     "story": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
-     "story_id": 50181136,
-     "snippet": "…to do work on multiple csv and excel files, joins and filters etc. I hate excel but am fine with SQL. With a duckdb session in dbeaver, I can literally select, project, and join the files on disk as if they were tables.…"
-    },
-    {
-     "id": "50192693",
-     "author": "CodeCompost",
-     "date": "2026-10-22",
-     "points": 0,
-     "story": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
-     "story_id": 50181136,
-     "snippet": "…ware of DataFrame, I am more familiar with SQL. So I used Python scripts in Jupyter to load Excel sheets into DuckDB, and then run queries in DuckDB. Eventually I export the data back to Excel or SQL Server. Not the most…"
-    },
-    {
-     "id": "50190310",
-     "author": "gopalv",
-     "date": "2026-10-22",
-     "points": 0,
-     "story": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
-     "story_id": 50181136,
-     "snippet": "> does duckdb support querying custom storage formats? No, this is still parquet being loaded in. The \"trick\" is running through sort order combinations which result in maximum packing in a Dremel style data format (like…"
-    },
-    {
-     "id": "50182776",
-     "author": "RobinL",
-     "date": "2026-10-21",
-     "points": 0,
-     "story": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
-     "story_id": 50181136,
-     "snippet": "…ructure, not because it performs better.  For instance people on Databricks can sometimes find it hard to use DuckDB on large machines, or they're just more familiar with Spark. For a new user who has flexibility over wh…"
-    },
-    {
-     "id": "50137019",
-     "author": "ashkankiani",
-     "date": "2026-10-18",
-     "points": 0,
-     "story": "A skeptic's first contact with Kubernetes (2024)",
-     "story_id": 50127572,
-     "snippet": "…e view, miller tree view, flat view, and inferred table view, and it makes editing JSON very easy too. Oh and duckdb can query against compressed json and jsonl at GB/s"
-    },
-    {
-     "id": "50091340",
-     "author": "pak9rabid",
-     "date": "2026-10-14",
-     "points": 0,
-     "story": "Same Job, Two Engines: InnoDB and Iceberg Internals",
-     "story_id": 50071466,
-     "snippet": "DuckDB is amazing. I swapped out some data analytics processing that was originally implemented with Python & Postgres to DuckDB and have been immensely pleased with the outcome.  Stuff that would take 6+ hours to do wit…"
-    },
-    {
-     "id": "50088838",
-     "author": "marcbpaul",
-     "date": "2026-10-14",
-     "points": 0,
-     "story": "Same Job, Two Engines: InnoDB and Iceberg Internals",
-     "story_id": 50071466,
-     "snippet": "DuckDB's come up a lot since I started my little journey to be honest. Everything I've read says you're absolutely right about the performance boost lol. It very well may be the next piece I check out, thank you."
-    },
-    {
-     "id": "50059694",
-     "author": "mootothemax",
-     "date": "2026-10-12",
-     "points": 0,
-     "story": "QGIS enacts moratorium on AI contributions",
-     "story_id": 50054751,
-     "snippet": "…pattern matching instinct too - spooky cos that's how I do stuff too. Great minds. For what it's worth, I use duckdb and its spatial stuff as my adapter. Works for my brain and if you force e.g. SQL files for each step,…"
-    },
-    {
-     "id": "50059001",
-     "author": "aynyc",
-     "date": "2026-10-12",
-     "points": 0,
-     "story": "Postgres isn't slow, your storage is",
-     "story_id": 50052163,
-     "snippet": "It doesn't. That's the issue. DuckDB for us is a pure read-only service pipe. We need other tools to ingest and write to parquet, which has its own limitation. SQLite does a great job to support single writer and multipl…"
-    },
-    {
-     "id": "50011324",
-     "author": "smithclay",
-     "date": "2026-10-08",
-     "points": 0,
-     "story": "DuckDB Ducklake",
-     "story_id": 49996149,
-     "snippet": "Don't think it's widely known or understood, but Ducklake doesn't require duckdb: it's just a (good) data lake spec that works in duckdb. There's a cool alternate rust/datafusion ecosystem initiative going on at  https:/…"
-    },
-    {
-     "id": "49984127",
-     "author": "jszymborski",
-     "date": "2026-10-06",
-     "points": 0,
-     "story": "Polars 2.0",
-     "story_id": 49977177,
-     "snippet": "…but I'll likely eventually switch over to Polars. Part of the problem, as I said, is that I'm just spoiled by DuckDB when performance matters."
     }
    ]
   },
@@ -9176,6 +9176,15 @@
    "recent": 93,
    "comments": [
     {
+     "id": "50330941",
+     "author": "travisd",
+     "date": "2026-11-01",
+     "points": 0,
+     "story": "Much Ado About None: Sentinel Values in Python",
+     "story_id": 50297068,
+     "snippet": "…It has worked (for us at least) pretty well to reduce the number of unhandled errors that make their way into Sentry. The granularity of the error types depends on the need (e.g., sometimes we just have an `ErrInvalid` t…"
+    },
+    {
      "id": "50195240",
      "author": "aivarsk",
      "date": "2026-10-22",
@@ -9273,15 +9282,6 @@
      "story": "Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
      "story_id": 48993414,
      "snippet": "classifying things, grouping things. We use it to help group issues at Sentry."
-    },
-    {
-     "id": "48759372",
-     "author": "mozerrr",
-     "date": "2026-07-02",
-     "points": 0,
-     "story": "Ask HN: Who wants to be hired? (July 2026)",
-     "story_id": 48747975,
-     "snippet": "…Multiplatform; Ktor + PostgreSQL; REST/gRPC/WebSocket; Docker, GitHub Actions, GitLab CI, Fastlane; Firebase, Sentry\n  Résumé/CV: message me on LinkedIn — linkedin.com/in/mozerrr\n  Email: dmitrymozer@gmail.com\n  \nI'm a c…"
     }
    ]
   },
@@ -10833,125 +10833,6 @@
    ]
   },
   {
-   "name": "Kitty",
-   "category": "Terminal",
-   "url": "https://sw.kovidgoyal.net/kitty/",
-   "commenters": 97,
-   "first_year": "2009",
-   "last_year": "2026",
-   "recent": 74,
-   "comments": [
-    {
-     "id": "50274389",
-     "author": "idoubtit",
-     "date": "2026-10-28",
-     "points": 0,
-     "story": "Ghostty 1.4",
-     "story_id": 50261998,
-     "snippet": "I'm not the GP, but I did use Kitty, then switched to Ghostty. There were some great features (e.g. a shorcut to load the current terminal content in a text editor), some arguable points (e.g. Python is Kitty's script la…"
-    },
-    {
-     "id": "50267965",
-     "author": "kombine",
-     "date": "2026-10-28",
-     "points": 0,
-     "story": "Ghostty 1.4",
-     "story_id": 50261998,
-     "snippet": "…g its age and has a bit of a widget bloat and an unwieldy configuration system. For that reason I switched to Kitty a couple of years ago when I was transitioning to neovim I'm have not looked back since. This looks like…"
-    },
-    {
-     "id": "50063246",
-     "author": "spudlyo",
-     "date": "2026-10-12",
-     "points": 0,
-     "story": "Codex CLI installs a persistent, self-updating background daemon by default",
-     "story_id": 50060694,
-     "snippet": "…right about the time I migrated to Ghostty so that also made a big difference. Showing inline images with the Kitty graphics protocol has been a huge improvement too, I love it when a model calls `read` on an image file…"
-    },
-    {
-     "id": "49996881",
-     "author": "slowin",
-     "date": "2026-10-07",
-     "points": 0,
-     "story": "No new Ghostty updates since March",
-     "story_id": 49996286,
-     "snippet": "I've moved back to Kitty and now I wonder why I ever left! Kovid not only consistently innovates in the terminal space, he also helps set standards. It really is a great, non-commercial project that I think everyone shou…"
-    },
-    {
-     "id": "49929592",
-     "author": "octoberfranklin",
-     "date": "2026-10-02",
-     "points": 0,
-     "story": "Pi 1.0",
-     "story_id": 49926069,
-     "snippet": "…useful. One is a simple but obvious Eoka extension for Pi. I modified my terminal (Alacritty) to support the Kitty image protocol (it already spoke sixel; Pi understandably uses the superior Kitty protocol).  And a tool…"
-    },
-    {
-     "id": "49335560",
-     "author": "mcclowes",
-     "date": "2026-08-17",
-     "points": 0,
-     "story": "Show HN: Saggar, a Mac terminal that keeps sessions and your attention organized",
-     "story_id": 49331551,
-     "snippet": "Looks great, well done! Kitty is great too, makes sense. I have purposefully kept things quite tight for my own sanity, but I think it makes sense market-share wise at the moment. At the moment I'm also assuming that if…"
-    },
-    {
-     "id": "49151418",
-     "author": "porridgeraisin",
-     "date": "2026-08-03",
-     "points": 0,
-     "story": "Show HN: Shitty – fast terminal. Memory-unsafe and faster than yours",
-     "story_id": 49149326,
-     "snippet": "…fast startup too. Of the two I use: xfce4-terminal starts utterly instantly without single instance feature. Kitty has the single instance feature and starts instantly with it."
-    },
-    {
-     "id": "49100141",
-     "author": "azuanrb",
-     "date": "2026-07-29",
-     "points": 0,
-     "story": "Superlogical",
-     "story_id": 49098965,
-     "snippet": "…ave been using tmux to manage my sessions and workspaces, mainly via sesh. But recently, I decided to move to Kitty and use its built-in sessions instead. I built something around it as well. It’s still early, but I’m re…"
-    },
-    {
-     "id": "48931766",
-     "author": "PennRobotics",
-     "date": "2026-07-16",
-     "points": 0,
-     "story": "Measuring Input Latency on Linux: X11 vs. Wayland, VRR, and DXVK",
-     "story_id": 48909424,
-     "snippet": "…ould I rattle off without looking it up? Alacritty, Ptyxis, Foot, Wexterm, Terminator, xterm, Konsole, Guake, Kitty, ghostty, xfce4-terminal, and does Putty count?) it's because of situations like this, where the new par…"
-    },
-    {
-     "id": "48888759",
-     "author": "lemontheme",
-     "date": "2026-07-13",
-     "points": 0,
-     "story": "Ghostel.el: Terminal emulator powered by libghostty",
-     "story_id": 48879504,
-     "snippet": "Having used it for three weeks before coming back to Kitty, my conclusions were that it’s a better terminal for people who need a terminal but don’t ‘live in’ their terminal. Ghostty just feels really polished and ‘nativ…"
-    },
-    {
-     "id": "48724833",
-     "author": "IshKebab",
-     "date": "2026-06-29",
-     "points": 0,
-     "story": "A native graphical shell for SSH",
-     "story_id": 48720758,
-     "snippet": "…ke VNC over SSH? Like, `top` and `micro` but with good graphics? I did try doing something like that with the Kitty graphics protocol and you can get kind of close..ish, but it's really restricted by having to send every…"
-    },
-    {
-     "id": "48631956",
-     "author": "warmwaffles",
-     "date": "2026-06-22",
-     "points": 0,
-     "story": "Pledging another $400k to the Zig software foundation",
-     "story_id": 48630020,
-     "snippet": "…Alacritty to Ghostty for ligatures and some other small goodies. I could probably get those same goodies with Kitty, but I didn't want to try nor have the desire to try. I may go back to Alacritty if I grow tired of Ghos…"
-    }
-   ]
-  },
-  {
    "name": "Calibre",
    "category": "Productivity",
    "url": "https://calibre-ebook.com",
@@ -11067,6 +10948,125 @@
      "story": "Kindle loyalists scramble as Amazon turns page on old e-readers",
      "story_id": 48194645,
      "snippet": "…or 2013, still works fine. I put it into airplane mode years ago, and just never turned wifi on again. I use Calibre to add books to it. (I use a little usb-c to micro usb adapter). There are places and ways to get book…"
+    }
+   ]
+  },
+  {
+   "name": "Kitty",
+   "category": "Terminal",
+   "url": "https://sw.kovidgoyal.net/kitty/",
+   "commenters": 96,
+   "first_year": "2009",
+   "last_year": "2026",
+   "recent": 73,
+   "comments": [
+    {
+     "id": "50274389",
+     "author": "idoubtit",
+     "date": "2026-10-28",
+     "points": 0,
+     "story": "Ghostty 1.4",
+     "story_id": 50261998,
+     "snippet": "I'm not the GP, but I did use Kitty, then switched to Ghostty. There were some great features (e.g. a shorcut to load the current terminal content in a text editor), some arguable points (e.g. Python is Kitty's script la…"
+    },
+    {
+     "id": "50267965",
+     "author": "kombine",
+     "date": "2026-10-28",
+     "points": 0,
+     "story": "Ghostty 1.4",
+     "story_id": 50261998,
+     "snippet": "…g its age and has a bit of a widget bloat and an unwieldy configuration system. For that reason I switched to Kitty a couple of years ago when I was transitioning to neovim I'm have not looked back since. This looks like…"
+    },
+    {
+     "id": "50063246",
+     "author": "spudlyo",
+     "date": "2026-10-12",
+     "points": 0,
+     "story": "Codex CLI installs a persistent, self-updating background daemon by default",
+     "story_id": 50060694,
+     "snippet": "…right about the time I migrated to Ghostty so that also made a big difference. Showing inline images with the Kitty graphics protocol has been a huge improvement too, I love it when a model calls `read` on an image file…"
+    },
+    {
+     "id": "49996881",
+     "author": "slowin",
+     "date": "2026-10-07",
+     "points": 0,
+     "story": "No new Ghostty updates since March",
+     "story_id": 49996286,
+     "snippet": "I've moved back to Kitty and now I wonder why I ever left! Kovid not only consistently innovates in the terminal space, he also helps set standards. It really is a great, non-commercial project that I think everyone shou…"
+    },
+    {
+     "id": "49929592",
+     "author": "octoberfranklin",
+     "date": "2026-10-02",
+     "points": 0,
+     "story": "Pi 1.0",
+     "story_id": 49926069,
+     "snippet": "…useful. One is a simple but obvious Eoka extension for Pi. I modified my terminal (Alacritty) to support the Kitty image protocol (it already spoke sixel; Pi understandably uses the superior Kitty protocol).  And a tool…"
+    },
+    {
+     "id": "49335560",
+     "author": "mcclowes",
+     "date": "2026-08-17",
+     "points": 0,
+     "story": "Show HN: Saggar, a Mac terminal that keeps sessions and your attention organized",
+     "story_id": 49331551,
+     "snippet": "Looks great, well done! Kitty is great too, makes sense. I have purposefully kept things quite tight for my own sanity, but I think it makes sense market-share wise at the moment. At the moment I'm also assuming that if…"
+    },
+    {
+     "id": "49151418",
+     "author": "porridgeraisin",
+     "date": "2026-08-03",
+     "points": 0,
+     "story": "Show HN: Shitty – fast terminal. Memory-unsafe and faster than yours",
+     "story_id": 49149326,
+     "snippet": "…fast startup too. Of the two I use: xfce4-terminal starts utterly instantly without single instance feature. Kitty has the single instance feature and starts instantly with it."
+    },
+    {
+     "id": "49100141",
+     "author": "azuanrb",
+     "date": "2026-07-29",
+     "points": 0,
+     "story": "Superlogical",
+     "story_id": 49098965,
+     "snippet": "…ave been using tmux to manage my sessions and workspaces, mainly via sesh. But recently, I decided to move to Kitty and use its built-in sessions instead. I built something around it as well. It’s still early, but I’m re…"
+    },
+    {
+     "id": "48931766",
+     "author": "PennRobotics",
+     "date": "2026-07-16",
+     "points": 0,
+     "story": "Measuring Input Latency on Linux: X11 vs. Wayland, VRR, and DXVK",
+     "story_id": 48909424,
+     "snippet": "…ould I rattle off without looking it up? Alacritty, Ptyxis, Foot, Wexterm, Terminator, xterm, Konsole, Guake, Kitty, ghostty, xfce4-terminal, and does Putty count?) it's because of situations like this, where the new par…"
+    },
+    {
+     "id": "48888759",
+     "author": "lemontheme",
+     "date": "2026-07-13",
+     "points": 0,
+     "story": "Ghostel.el: Terminal emulator powered by libghostty",
+     "story_id": 48879504,
+     "snippet": "Having used it for three weeks before coming back to Kitty, my conclusions were that it’s a better terminal for people who need a terminal but don’t ‘live in’ their terminal. Ghostty just feels really polished and ‘nativ…"
+    },
+    {
+     "id": "48724833",
+     "author": "IshKebab",
+     "date": "2026-06-29",
+     "points": 0,
+     "story": "A native graphical shell for SSH",
+     "story_id": 48720758,
+     "snippet": "…ke VNC over SSH? Like, `top` and `micro` but with good graphics? I did try doing something like that with the Kitty graphics protocol and you can get kind of close..ish, but it's really restricted by having to send every…"
+    },
+    {
+     "id": "48631956",
+     "author": "warmwaffles",
+     "date": "2026-06-22",
+     "points": 0,
+     "story": "Pledging another $400k to the Zig software foundation",
+     "story_id": 48630020,
+     "snippet": "…Alacritty to Ghostty for ligatures and some other small goodies. I could probably get those same goodies with Kitty, but I didn't want to try nor have the desire to try. I may go back to Alacritty if I grow tired of Ghos…"
     }
    ]
   },
@@ -12383,11 +12383,20 @@
    "name": "Starship",
    "category": "Terminal",
    "url": "https://starship.rs",
-   "commenters": 47,
+   "commenters": 48,
    "first_year": "2013",
    "last_year": "2026",
-   "recent": 33,
+   "recent": 34,
    "comments": [
+    {
+     "id": "50331641",
+     "author": "game_the0ry",
+     "date": "2026-11-02",
+     "points": 0,
+     "story": "Patrick Stewart taught us what good men do with power",
+     "story_id": 50327650,
+     "snippet": "…l it too much, but there is a scene where a woman from the past (from the 21st century) gets beamed up to the Starship Enterprise. She asks how much it cost. Full dialog below: > Lily: \"How much did this thing cost?\" > P…"
+    },
     {
      "id": "50145136",
      "author": "_diyar",
@@ -12486,15 +12495,6 @@
      "story": "2026 Hugo Awards",
      "story_id": 49586005,
      "snippet": "The first one was very much written in an homage to Starship Troopers and it was an early work of his.  His  very  first one was Agent to the Stars ( https://en.wikipedia.org/wiki/Agent_to_the_Stars#Publication...  - ava…"
-    },
-    {
-     "id": "49257673",
-     "author": "Terretta",
-     "date": "2026-08-11",
-     "points": 0,
-     "story": "Managing AI Coding Costs at Scale",
-     "story_id": 49214468,
-     "snippet": "…ngs like observability  STRONG agree.  Most devs, if they can see their costs, try. Even just putting it in a starship prompt goes a long way! Observability supports  effective, responsible, and accountable  use, \"cost c…"
     }
    ]
   },
