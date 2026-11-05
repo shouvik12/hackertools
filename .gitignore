@@ -1,0 +1,4 @@
+*.patch
+test.json
+__pycache__/
+.DS_Store
