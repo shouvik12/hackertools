@@ -1,243 +1,124 @@
 {
- "generated": "2026-11-05T03:52Z",
+ "generated": "2026-11-05T06:55Z",
  "source": "Hacker News comments via hn.algolia.com",
  "min_commenters": 2,
  "tools": [
   {
-   "name": "1Password",
-   "category": "Productivity",
-   "url": "https://1password.com",
-   "commenters": 147,
-   "first_year": "2009",
+   "name": "Emacs",
+   "category": "Editors",
+   "url": "https://www.gnu.org/software/emacs/",
+   "commenters": 208,
+   "first_year": "2007",
    "last_year": "2026",
-   "recent": 5,
+   "recent": 98,
    "comments": [
     {
-     "id": "50309430",
-     "author": "grey-area",
-     "date": "2026-10-30",
+     "id": "50374571",
+     "author": "e40",
+     "date": "2026-11-05",
      "points": 0,
-     "story": "Proton's CEO Cancels AI 'Re-Interviews'",
-     "story_id": 50307183,
-     "snippet": "I don't think they have one, I use 1password. Note sure why email and a password manager would be linked?"
+     "story": "Vi Turns 50: The True History of vi",
+     "story_id": 50373004,
+     "snippet": "Emacs user… wow, didn’t know any of that. Was at UCB 80-84. Switched to Gosling’s emacs in 82ish, GNU in 83 while rms was visiting UCB. He shared Prof Fateman’s grad student office. Wild times."
     },
     {
-     "id": "50186733",
-     "author": "pantsforbirds",
-     "date": "2026-10-21",
+     "id": "50373296",
+     "author": "so-cal-schemer",
+     "date": "2026-11-05",
      "points": 0,
-     "story": "Claude Duet",
-     "story_id": 50186037,
-     "snippet": "Oh I absolutely LOVE letting claude code manage passwords via 1password! I have the CLI installed, I have whatever 1password calls a subdirectory/permission group, and I have some ssh keys and other passwords that I woul…"
+     "story": "Vi Turns 50: The True History of vi",
+     "story_id": 50373004,
+     "snippet": "…me the de facto standard Unix editor and a nearly undisputed hacker favorite outside of MIT until the rise of EMACS after about 1984. Tends to frustrate new users no end, as it will neither take commands while expecting…"
     },
     {
-     "id": "50125070",
-     "author": "frenck",
-     "date": "2026-10-16",
-     "points": 0,
-     "story": "I never authorized an integration that scans my secrets",
-     "story_id": 50124251,
-     "snippet": "Not a lie, but I was wrong on that one. I'm happy to admit that. I've used 1Password's Watchtower for so many years that I assumed the breached password check was just part of it. After your reply I looked it up and lear…"
-    },
-    {
-     "id": "50096136",
-     "author": "notJim",
-     "date": "2026-10-14",
-     "points": 0,
-     "story": "Passkeys are not a trap",
-     "story_id": 50088935,
-     "snippet": "The 1password integration works great IME. When a site supports passkeys, 1password seems to offer to save the passkey, and at login time, a little popup appears from 1password asking if I want to use my passkey, and I c…"
-    },
-    {
-     "id": "50095062",
-     "author": "Whitespace",
-     "date": "2026-10-14",
-     "points": 0,
-     "story": "Passkeys are not a trap",
-     "story_id": 50088935,
-     "snippet": "…can't just use whatever passkey manager that you want. I use Safari, Chrome, MacOS, a Google Pixel phone, and 1Password.  I have passkeys in 1Password, but it's a crap shoot if I'm able to login on a device. Chrome wants…"
-    },
-    {
-     "id": "9921792",
-     "author": "scalesolved",
-     "date": "2015-07-21",
-     "points": 0,
-     "story": "Ask HN: What are your biggest frustrations with Linux development?",
-     "story_id": 9921461,
-     "snippet": "…of the business want to use like: Slack -> No Linux support,\nZoom (video conferencing) -> Early beta support,\n1Password -> I use last pass instead. Macs have really dominated some areas of the tech scene especially in th…"
-    },
-    {
-     "id": "9889427",
-     "author": "dsacco",
-     "date": "2015-07-15",
-     "points": 0,
-     "story": "Ask HN: Do you use different passwords on different sites?",
-     "story_id": 9888817,
-     "snippet": "…y domain as well. But I recognize that's a tad paranoid. Perhaps only the most valuable accounts. I recommend 1Password. I don't think there has ever been a major security breach with 1Password, and when I reported a min…"
-    },
-    {
-     "id": "9888976",
-     "author": "bosdev",
-     "date": "2015-07-15",
-     "points": 0,
-     "story": "Ask HN: Do you use different passwords on different sites?",
-     "story_id": 9888817,
-     "snippet": "I use a password manager (1Password) to generate a strong, unique, password for every site."
-    },
-    {
-     "id": "9869710",
-     "author": "shinratdr",
-     "date": "2015-07-11",
-     "points": 0,
-     "story": "Is Windows Phone Dead?",
-     "story_id": 9868707,
-     "snippet": "…d manager in five years means I don't like or use password managers. Quite the contrary, it just means I love 1Password and use it every day."
-    },
-    {
-     "id": "9789443",
-     "author": "tzs",
-     "date": "2015-06-27",
-     "points": 0,
-     "story": "Master Password",
-     "story_id": 9788597,
-     "snippet": "…place it is storing password version numbers and site-specific password formatting templates. At that point, 1Password showed up in a MacHeist bundle, I gave it a try, and very shortly afterwards abandoned my password g…"
-    },
-    {
-     "id": "9789424",
-     "author": "spectralblu",
-     "date": "2015-06-27",
-     "points": 0,
-     "story": "Master Password",
-     "story_id": 9788597,
-     "snippet": "…n why not just go with an actual password manager without any of these arbitrary limitations? I've been using 1Password and its been working out great for me. (Arguments may be made about its closed source, but KeepassX…"
-    },
-    {
-     "id": "9728270",
-     "author": "tptacek",
-     "date": "2015-06-16",
-     "points": 0,
-     "story": "KeePass – questionable security",
-     "story_id": 9727297,
-     "snippet": "When you went looking for it, did you try Googling for [1password file format]?"
-    }
-   ]
-  },
-  {
-   "name": "Ghostty",
-   "category": "Terminal",
-   "url": "https://ghostty.org",
-   "commenters": 130,
-   "first_year": "2026",
-   "last_year": "2026",
-   "recent": 130,
-   "comments": [
-    {
-     "id": "50364502",
-     "author": "jemmyw",
+     "id": "50366421",
+     "author": "esFran",
      "date": "2026-11-04",
      "points": 0,
-     "story": "Kitty 0.50",
-     "story_id": 50362980,
-     "snippet": "Not OP either but I moved back to kitty after giving ghostty a try. Kitty is pretty mature and it has tons of features. I don't use them all by any means, but enough that I missed them. It has all those features yet it f…"
+     "story": "Microsoft fixes a Windows 11 annoyance as PC revenue declines",
+     "story_id": 50351463,
+     "snippet": "…updates. ETERNALLY, you read that right. Because thanks to that, I finally dared to try Linux, openSUSE, Doom Emacs and KDE, and I'm IN LOVE with my PC all over again. Thank you so much, Microsoft!!!"
     },
     {
-     "id": "50364341",
-     "author": "quibono",
-     "date": "2026-11-04",
+     "id": "50313454",
+     "author": "sooheon",
+     "date": "2026-10-31",
      "points": 0,
-     "story": "Kitty 0.50",
-     "story_id": 50362980,
-     "snippet": "…ve used kitty before and really liked it. I am considering switching back to it now on Linux. I've been using Ghostty on macOS and loving it there, but it's quite bad on Linux. It keeps segfaulting, takes a long time to…"
+     "story": "Herdr has released native app",
+     "story_id": 50298436,
+     "snippet": "…rminal) and lets you customize all the ui around it. Among all the ADEs I've used this is most reminiscent of emacs. Orca is a bit heavy in asking you to define projects / worktrees up front. Anything you do, even quick…"
     },
     {
-     "id": "50363873",
-     "author": "ivolimmen",
-     "date": "2026-11-04",
-     "points": 0,
-     "story": "Kitty 0.50",
-     "story_id": 50362980,
-     "snippet": "I use multiple terminals. I like Ghostty and Kitty. I the past I tried multiple others like Guake, Allacritty, xterm, Gnome Terminal, ITerm (when I was forced to use a Mac), Windows Terminal (I am now forced to work on W…"
-    },
-    {
-     "id": "50363076",
-     "author": "TheRoque",
-     "date": "2026-11-04",
-     "points": 0,
-     "story": "Kitty 0.50",
-     "story_id": 50362980,
-     "snippet": "I haven't try Ghostty, but what I like about kitty is that it's performant, easy to customize (often it's just one line to add and you get that new feature you want), I like their defaults for tabs, layouts. It's not ove…"
-    },
-    {
-     "id": "50305714",
-     "author": "desireco42",
+     "id": "50303737",
+     "author": "frantathefranta",
      "date": "2026-10-30",
      "points": 0,
      "story": "Herdr has released native app",
      "story_id": 50298436,
-     "snippet": "Since I am using Ghostty I can give it a try, it would be nice to see it resolved as it was stupid tbh, all the difficult stuff is working well."
+     "snippet": "Another vote for publishing it, would love something like this in Emacs."
     },
     {
-     "id": "50300757",
-     "author": "ajoseps",
+     "id": "50300314",
+     "author": "athrowaway3z",
      "date": "2026-10-30",
      "points": 0,
      "story": "Herdr has released native app",
      "story_id": 50298436,
-     "snippet": "I recently switched to Zellij with Ghostty and the selection/copy/pasting seems to work just fine. I previously used zellij and kitty and I would have issues."
+     "snippet": "Having used herdr since its release, the recent 'Emacs is 50' made me decide to go back to it and just vibecode herdr features i use into an emacs package. It works great so far. I can just ask it to update its layout wh…"
     },
     {
-     "id": "50300261",
-     "author": "jdorfman",
+     "id": "50298713",
+     "author": "kragen",
      "date": "2026-10-30",
      "points": 0,
-     "story": "Herdr has released native app",
-     "story_id": 50298436,
-     "snippet": "It works great in Ghostty not sure if I need another standalone app. I’ll definitely try it out but my expectations are low."
+     "story": "NetBSD adds a new text editor called atto",
+     "story_id": 50287599,
+     "snippet": "In GNU Emacs, try running M-: (dot) RET. I think this alias was an aid to porting Lisp from some other Emacs variant in the 80s that used \"dot\" instead of \"point\". Never figured out which.  It isn't mg because mg doesn't…"
     },
     {
-     "id": "50288331",
-     "author": "wpm",
+     "id": "50296313",
+     "author": "wilkystyle",
      "date": "2026-10-29",
      "points": 0,
-     "story": "Ghostty 1.4",
-     "story_id": 50261998,
-     "snippet": "How and why? How is Ghostty's text rendering  better ? And why should I go try 1.4? Did something change in how it renders text? Straight up it doesn't look as good to my eye as the built in Terminal and iTerm with the i…"
+     "story": "Emacs Turns 50",
+     "story_id": 50273171,
+     "snippet": "I definitely agree with this. Literally the only time I use lisp is when working on my Emacs configuration, but after almost 20 years of using it to write all sorts of functionality from big to small things, just having…"
     },
     {
-     "id": "50284196",
-     "author": "kritr",
+     "id": "50291657",
+     "author": "iLemming",
      "date": "2026-10-29",
      "points": 0,
-     "story": "Ghostty 1.4",
-     "story_id": 50261998,
-     "snippet": "Yeah ghostty w/ kmscon was able to do images. didn’t try mpv though."
+     "story": "Emacs Turns 50",
+     "story_id": 50273171,
+     "snippet": "…s - to the point that it can drive any experienced vimmer truly mad. With one notable exception. Evil-mode in Emacs is just wonderful. It's the best vim-emulation layer, to a certain degree it works even better than in V…"
     },
     {
-     "id": "50282525",
-     "author": "fleeno",
-     "date": "2026-10-28",
+     "id": "50288818",
+     "author": "pwdisswordfishq",
+     "date": "2026-10-29",
      "points": 0,
-     "story": "Ghostty 1.4",
-     "story_id": 50261998,
-     "snippet": "I love Ghostty and use it under Linux and MacOS, but really wish it had OpenBSD support!"
+     "story": "NetBSD adds a new text editor called atto",
+     "story_id": 50287599,
+     "snippet": "As we all know, beginners love Emacs keystrokes."
     },
     {
-     "id": "50280151",
-     "author": "elias1233",
-     "date": "2026-10-28",
+     "id": "50288409",
+     "author": "excannuk",
+     "date": "2026-10-29",
      "points": 0,
-     "story": "Ghostty 1.4",
-     "story_id": 50261998,
-     "snippet": "…e. I added Tmux control mode (a pretty extensive feature)  https://github.com/tmux/tmux/wiki/Control-Mode  to Ghostty:  https://github.com/eliasfloreteng/ghostty-tmux  and I use that version every day"
+     "story": "NetBSD adds a new text editor called atto",
+     "story_id": 50287599,
+     "snippet": "That's not an empty set? I'm an eMacs guy, and I use vi when on the shell"
     },
     {
-     "id": "50276780",
-     "author": "bayesnet",
-     "date": "2026-10-28",
+     "id": "50285296",
+     "author": "wormius",
+     "date": "2026-10-29",
      "points": 0,
-     "story": "Ghostty 1.4",
-     "story_id": 50261998,
-     "snippet": "…I had no idea it was possible with kitty. Now to decide whether to switch back for it... As an aside, I love ghostty and I think it's the most responsive terminal emulator around. But kitty was what got me off Terminal.…"
+     "story": "Emacs Turns 50",
+     "story_id": 50273171,
+     "snippet": "…neovim) a couple years ago (been computing as a kid since early 80s). But have been enjoying learning alot of emacs (oh god so much to learn :)) I'm not ready to make the jump (not sure I will jump at all, but...) I am g…"
     }
    ]
   },
@@ -245,118 +126,118 @@
    "name": "Ansible",
    "category": "Infra",
    "url": "https://www.ansible.com",
-   "commenters": 85,
+   "commenters": 152,
    "first_year": "2014",
-   "last_year": "2015",
-   "recent": 0,
+   "last_year": "2026",
+   "recent": 67,
    "comments": [
     {
-     "id": "9966243",
-     "author": "boundlessdreamz",
-     "date": "2015-07-29",
+     "id": "50328615",
+     "author": "shock",
+     "date": "2026-11-01",
      "points": 0,
-     "story": "Why Docker Is Not Yet Succeeding Widely in Production",
-     "story_id": 9961537,
-     "snippet": "I think you will get more bang for the buck by using something like ansible or salt (I have only used ansible and love it and I have heard salt is comparable) You don't have a standard repeatable way to set up an environ…"
+     "story": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+     "story_id": 50325253,
+     "snippet": "…ever I use AI to write code, in my experience it invariably chooses the MIT license. For example, for all the ansible roles that I've written using AI it put the MIT license in the meta file, unless otherwise prompted. I…"
     },
     {
-     "id": "9957194",
-     "author": "freetonik",
-     "date": "2015-07-27",
+     "id": "50168407",
+     "author": "pdpi",
+     "date": "2026-10-20",
      "points": 0,
-     "story": "Show HN: Hexlet – online courses in real dev environment",
-     "story_id": 9957193,
-     "snippet": "…under the hood. It's written in Rails with ReactJS, and we use Docker (for both development and production), Ansible and AWS. Oh, and we love Slack. There is even a public slack chat for our community with more than 660…"
+     "story": "Getting Banned from r/java",
+     "story_id": 50167524,
+     "snippet": "…. It reeks of the Gell-Mann Amnesia Effect. I have a slightly more nuanced take on it — I use Claude to write Ansible playbooks for my homelab because I know enough about server management to have a clear opinion on how…"
     },
     {
-     "id": "9905793",
-     "author": "geerlingguy",
-     "date": "2015-07-17",
+     "id": "50117066",
+     "author": "chanux",
+     "date": "2026-10-16",
      "points": 0,
-     "story": "Ask HN: Do you use Vagrant or Docker for active development?",
-     "story_id": 9863538,
-     "snippet": "Vagrant + Ansible for most things. I have used Docker to rebuild some of my environments, and there's a lot of promise, but some hard issues (especially w/r/t more complicated applications with multiple dependencies) tha…"
+     "story": "What I self-host",
+     "story_id": 50109715,
+     "snippet": "…n it. However it still felt too much for my \"few go binaries thrown on a server\" setup. I ended up going with Ansible to set things up (and of course I use systemd)."
     },
     {
-     "id": "9890488",
-     "author": "antod",
-     "date": "2015-07-15",
+     "id": "50098136",
+     "author": "whalesalad",
+     "date": "2026-10-15",
      "points": 0,
-     "story": "Interview: Larry Wall",
-     "story_id": 9884915,
-     "snippet": "…ro footprint is one of my 'things'. I lean more towards Python these days because of tools like SaltStack and Ansible and great library support, and because it fits my brain better. So with Linux, I'd probably recommend…"
+     "story": "Running Windows desktop tests from Linux with disposable VMs",
+     "story_id": 50088643,
+     "snippet": "…as code, cert management, my own ec2 as a service, etc. Making changes is done via a mix of one off tooling, ansible and terraform. I use Claude or codex to manage the entire thing, interchangeably. They keep detailed d…"
     },
     {
-     "id": "9873395",
-     "author": "tomjen3",
-     "date": "2015-07-12",
+     "id": "50094685",
+     "author": "hangrybear666",
+     "date": "2026-10-14",
      "points": 0,
-     "story": "Ask HN: How do you deal with social media pressure on your GitHub project?",
-     "story_id": 9873125,
-     "snippet": "I didn't know you wrote Ansible, but I just want to say that it is really great. Love that it can be bootstrapped from nothing and that you can bring up another machine that is identical to what you currently have with j…"
+     "story": "Neckbeard – A DevOps/platform/SRE plugin for your agent",
+     "story_id": 50091794,
+     "snippet": "…g as IaC code. Besides Terraform, in my team we use Packer to build reusable \"golden\" machine images but also Ansible to configure live machines. I'm still surprised nobody bothered us to change to Opentofu, it's not eve…"
     },
     {
-     "id": "9864221",
-     "author": "edude03",
-     "date": "2015-07-10",
+     "id": "50071303",
+     "author": "traverseda",
+     "date": "2026-10-13",
      "points": 0,
-     "story": "Ask HN: Do you use Vagrant or Docker for active development?",
-     "story_id": 9863538,
-     "snippet": "I use Ansible and Vagrant for active development of client projects. It's a great combo because it ensures my local environment matches production as close as possible and as well I can go from nothing to running environ…"
+     "story": "Firefox Enterprise",
+     "story_id": 50070302,
+     "snippet": "…fox already had a very mature policy management engine, it just didn't have a nice gui and would require like ansible or something to use. It allows forcing specific extensions on, and allowing user installs is a flag. I…"
     },
     {
-     "id": "9863903",
-     "author": "NathanKP",
-     "date": "2015-07-10",
+     "id": "49979409",
+     "author": "stevekemp",
+     "date": "2026-10-06",
      "points": 0,
-     "story": "Ask HN: Do you use Vagrant or Docker for active development?",
-     "story_id": 9863538,
-     "snippet": "…the containers since that same location is mounted by the containers. I just checked the Vagrantfile, and the Ansible playbook we use to launch the docker containers, and I don't see any special magic required to get the…"
+     "story": "JetBrains reported a net financial loss first time in its tracked history",
+     "story_id": 49977072,
+     "snippet": "…guess it depends on your niche; I spend half my time coding Golang and Python, and the other half terraform, ansible, perl and I use other languages now and again for small projects and utilities. In the devops/sysadmin…"
     },
     {
-     "id": "9862119",
-     "author": "emfree",
-     "date": "2015-07-10",
+     "id": "49576102",
+     "author": "VCFundedGenYer",
+     "date": "2026-09-05",
      "points": 0,
-     "story": "How We Deploy Python Code",
-     "story_id": 9861127,
-     "snippet": "Ansible works well for us, although we use it in a somewhat different way than most folks. We previously wrote about our approach here, if you're curious:  https://nylas.com/blog/graduating-past-playbooks"
+     "story": "AI handles incidents, engineers lose touch with their systems",
+     "story_id": 49574167,
+     "snippet": "Nah, It's not even good for small code changes. Try using it with Ansible. It spits back complete buffoonery."
     },
     {
-     "id": "9773254",
-     "author": "penguinlinux",
-     "date": "2015-06-24",
+     "id": "49242773",
+     "author": "cheema33",
+     "date": "2026-08-10",
      "points": 0,
-     "story": "What is your VM workflow?",
-     "story_id": 9772022,
-     "snippet": "…installs virtualbox and downloads the small image to this laptop. Then the developers does a git pull of our Ansible code, the Ansible code contains a subdirectory with shell scripts that can create headless virtualmach…"
+     "story": "How We Pushed CDC into Postgres",
+     "story_id": 49238050,
+     "snippet": "…ty hosting of databases solves problems we don't have. Particularly with AI tools managing our services using ansible/terraform, I think we'd be worse off if we switched to a SaaS product."
     },
     {
-     "id": "9709215",
-     "author": "vdijkbas",
-     "date": "2015-06-12",
+     "id": "49210283",
+     "author": "skydhash",
+     "date": "2026-08-07",
      "points": 0,
-     "story": "NixOS Linux",
-     "story_id": 9708282,
-     "snippet": "At LumiGuide we use NixOS on our development machines as well as on all our production servers. I used ansible before but NixOS is on a whole different level. See the following for a story about a system we just deployed…"
+     "story": "The web server deployment model breaks at hobby scale",
+     "story_id": 49209921,
+     "snippet": "…min is to write a systemd service, configure the proxy (if it’s on a vps and I use subdomains), and maybe use ansible for scripting the provisioning and deploy. It’s fine to publish recommendations how to tune configurat…"
     },
     {
-     "id": "9707329",
-     "author": "copsarebastards",
-     "date": "2015-06-12",
+     "id": "49148865",
+     "author": "limagnolia",
+     "date": "2026-08-02",
      "points": 0,
-     "story": "Docker, Mesos, Marathon, and the End of Pets",
-     "story_id": 9704475,
-     "snippet": "I've used Ansible, and of the systems I've used to solve this and similar problems (Chef, Docker, Puppet) Ansible has been the cleanest, most well-thought-out, and easiest to use. But ultimately it's included in my revie…"
+     "story": "Show HN: Bor – Open-source policy management for Linux desktops",
+     "story_id": 49142569,
+     "snippet": "I use Ansible or Pyinfra more recently to accomplish these sorts of tasks.  Not quite the same concept, but I think it accomplishes the same goal for me."
     },
     {
-     "id": "9692980",
-     "author": "jkyle",
-     "date": "2015-06-10",
+     "id": "48996691",
+     "author": "timwis",
+     "date": "2026-07-21",
      "points": 0,
-     "story": "Xhyve – Lightweight Virtualization on OS X Based on Bhyve",
-     "story_id": 9690846,
-     "snippet": "…of hours one time to have something working.If they use someone else's solution, it takes minutes. Here's an ansible task I use to configure an ubuntu machine[1]. It's all of 24 lines. If you're running it against a VM,…"
+     "story": "Cheap Self-Hosted Kubernetes on Hetzner Cloud",
+     "story_id": 48996128,
+     "snippet": "For those interested in this I also recommend autobase, a set of ansible roles for a highly available postgres cluster on hetzner or other clouds:  https://github.com/autobase-tech/autobase"
     }
    ]
   },
@@ -364,594 +245,201 @@
    "name": "Docker",
    "category": "Infra",
    "url": "https://www.docker.com",
-   "commenters": 65,
+   "commenters": 123,
    "first_year": "2015",
-   "last_year": "2015",
-   "recent": 0,
+   "last_year": "2026",
+   "recent": 58,
    "comments": [
     {
-     "id": "9992390",
-     "author": "integraton",
-     "date": "2015-08-02",
+     "id": "50370525",
+     "author": "warpspin",
+     "date": "2026-11-04",
      "points": 0,
-     "story": "Using Windows 10? Microsoft is watching",
-     "story_id": 9991785,
-     "snippet": "Those are different articles. Your comment is analogous to linking to old Docker article discussions when a new article is posted in order to try to discourage discussion of Docker in general."
+     "story": "Ask HN: What's your current AI agentic setup?",
+     "story_id": 50366117,
+     "snippet": "…o whenever you need to change something, you have to restart the whole thing, if I remember right. Also tried Docker Sandboxes which worked fine during the try out but my trust in Docker products with regards to security…"
     },
     {
-     "id": "9977508",
-     "author": "nebulon",
-     "date": "2015-07-30",
+     "id": "50353677",
+     "author": "donk8r",
+     "date": "2026-11-03",
      "points": 0,
-     "story": "Show HN: Cloudron – Get Your Own Cloud",
-     "story_id": 9976992,
-     "snippet": "…of view we try to keep changes required for existing apps to be ported to a minimum. To achieve this, we use docker as well as an heroku inspired deployment approach. Sandstorm have their own containerization. You can s…"
+     "story": "Octomind – open-source AI harness that saves your tokens, static rust",
+     "story_id": 50352898,
+     "snippet": "…ptimized for autonomous work at max and so far finalizing task while running in isolated environments (we use docker for that)"
     },
     {
-     "id": "9977173",
-     "author": "jrochkind1",
-     "date": "2015-07-30",
+     "id": "50287289",
+     "author": "cjus",
+     "date": "2026-10-29",
      "points": 0,
-     "story": "Docker Misconceptions",
-     "story_id": 9976718,
-     "snippet": "Interesting, while the OP says they like Docker, they pretty much recommend against using Docker for the things/purposes that most Docker hype recommends it for."
+     "story": "Show HN: Audio-chat-box – offline speech in and out for any program, over stdio",
+     "story_id": 50287286,
+     "snippet": "…It all runs locally through sherpa-onnx. To try it without building anything, there's a small browser demo in Docker. You speak, it shows what it heard, and it reads it back in any of Kokoro's 54 voices:     docker run -…"
     },
     {
-     "id": "9966768",
-     "author": "siliconc0w",
-     "date": "2015-07-29",
+     "id": "50262028",
+     "author": "vishwakulkarni",
+     "date": "2026-10-27",
      "points": 0,
-     "story": "Why Docker Is Not Yet Succeeding Widely in Production",
-     "story_id": 9961537,
-     "snippet": "Just to oppose the pessimism here - we use docker in production and so far it has worked pretty well.  We do run into the problems mentioned in article but they aren't insurmountable.  We also built a tool around cluster…"
+     "story": "Show HN: PoseForge – Local-first AI studio for images and video (Codex, ComfyUI)",
+     "story_id": 50259155,
+     "snippet": "…y have), ComfyUI, or hosted models through your own API keys (OpenAI, Gemini). The embedded database means no Docker or Postgres setup. To try it:     git clone https://github.com/vishwakulkarni/PoseForge.git\n  cd PoseFo…"
     },
     {
-     "id": "9963604",
-     "author": "collyw",
-     "date": "2015-07-28",
+     "id": "50250738",
+     "author": "the__alchemist",
+     "date": "2026-10-26",
      "points": 0,
-     "story": "Why Docker Is Not Yet Succeeding Widely in Production",
-     "story_id": 9961537,
-     "snippet": "Crap like that actually happens. I have a mathematician friend who does a bit of programming ask me about Docker, as someone had told her to use it. She works as a researcher in academia, so probably only needs to run he…"
+     "story": "Oldest GUI application that still runs on Windows 11",
+     "story_id": 50248055,
+     "snippet": "I agree - the model I use for why containers (Docker etc) exist is to abstract over Linux ABI incompatibility. I don't think they're a great solution, as it complicates software distribution. I should be able to distribu…"
     },
     {
-     "id": "9963453",
-     "author": "joslin01",
-     "date": "2015-07-28",
+     "id": "50240733",
+     "author": "ffaccount2",
+     "date": "2026-10-26",
      "points": 0,
-     "story": "Why Docker Is Not Yet Succeeding Widely in Production",
-     "story_id": 9961537,
-     "snippet": "1 - Yes it does. This is a system problem more than a docker problem. For any relatively experienced engineer, they should be capable of realizing the logs must be stored somewhere and can plan around it. 2 - If a system…"
+     "story": "Steal My Bitcoin CTF PoC",
+     "story_id": 50237379,
+     "snippet": "There are many PoCs online that work on realistic setups (like PHP docker image). If you're curious you can try to replicate it locally."
     },
     {
-     "id": "9963389",
-     "author": "jamesRaybould",
-     "date": "2015-07-28",
+     "id": "50229325",
+     "author": "MikeRichardson",
+     "date": "2026-10-25",
      "points": 0,
-     "story": "Why Docker Is Not Yet Succeeding Widely in Production",
-     "story_id": 9961537,
-     "snippet": "We are looking at using Docker to help make our dev environments a little bit more sane. We deploy to Heroku so we use the Heroku docker image to give us (what is hopefully) as close to production environment in dev as p…"
+     "story": "Docker is weird",
+     "story_id": 50202681,
+     "snippet": "> I use docker compose on almost every personal project Even if you don't need to? Even if there's no benefit? I was handed a vibe coded project recently, a radio station playout system. For some reason, it's spread acro…"
     },
     {
-     "id": "9963316",
-     "author": "maratd",
-     "date": "2015-07-28",
+     "id": "50226202",
+     "author": "LiveOverflow",
+     "date": "2026-10-24",
      "points": 0,
-     "story": "Why Docker Is Not Yet Succeeding Widely in Production",
-     "story_id": 9961537,
-     "snippet": "> At its best, Docker gives you dev/production parity I get that when I use the same OS and built-in package manager? I would virtualize the environment using something like VirtualBox for my dev and EC2/DigitalOcean/etc…"
+     "story": "Show HN: Steal My Bitcoin",
+     "story_id": 50224916,
+     "snippet": "…My exploit right now requires more, but I will give it a try (aka ask Codex). 3. You can setup a server with `docker run php:8.5.11-apache` with any of the over 400 vulnerable `php` apache images and give me the IP."
     },
     {
-     "id": "9962475",
-     "author": "peu4000",
-     "date": "2015-07-28",
+     "id": "50225848",
+     "author": "akerl_",
+     "date": "2026-10-24",
      "points": 0,
-     "story": "Why Docker Is Not Yet Succeeding Widely in Production",
-     "story_id": 9961537,
-     "snippet": "I'd really love to include docker in our puppet testing framework, so we can do actual meaningful tests without deploying to real environments. But, dealing with all of the problems of deploying docker to production does…"
+     "story": "A whirlwind tour of systemd-nspawn containers (2025)",
+     "story_id": 50214983,
+     "snippet": "I’ve been using docker since the early days. One of the early choices I made and stuck with is to never let Docker touch iptables. I make a bridge for Docker to use and configure iptables rules myself via parallel config…"
     },
     {
-     "id": "9962410",
-     "author": "zaargy",
-     "date": "2015-07-28",
+     "id": "50214153",
+     "author": "forrestthewoods",
+     "date": "2026-10-23",
      "points": 0,
-     "story": "Why Docker Is Not Yet Succeeding Widely in Production",
-     "story_id": 9961537,
-     "snippet": "I still love Docker and do think it solves a genuine problem. But yes, where to put your logs, how to manage state, how to schedule containers on machines, how to coordinate processes, how to inspect an app when somethin…"
+     "story": "Docker is weird",
+     "story_id": 50202681,
+     "snippet": "> just so convenient Is it? At this point I associate Docker with slow build times and later upon layers of abstraction to try and cache and make it not slow. But it’s a never ending battle. I can’t run Isaac Lab on my w…"
     },
     {
-     "id": "9962305",
-     "author": "Benjamin_Dobell",
-     "date": "2015-07-28",
+     "id": "50213664",
+     "author": "cloudyporpoise",
+     "date": "2026-10-23",
      "points": 0,
-     "story": "Why Docker Is Not Yet Succeeding Widely in Production",
-     "story_id": 9961537,
-     "snippet": "I have zero problem with a hybrid setup. I'm not running Docker just for the sake of running Docker. I'm running Docker (specifically Dokku) because it drastically  simplifies  deploying new builds, and graduating those…"
+     "story": "Docker is weird",
+     "story_id": 50202681,
+     "snippet": "I see less and less of a need for Docker when running simple linux hosts and building with terraform \\ ansible. For any codebase with dep management it is great and I still prefer building code through Docker but that's…"
     },
     {
-     "id": "9961853",
-     "author": "e40",
-     "date": "2015-07-28",
+     "id": "50209095",
+     "author": "DockerizeMe",
+     "date": "2026-10-23",
      "points": 0,
-     "story": "Why Docker Is Not Yet Succeeding Widely in Production",
-     "story_id": 9961537,
-     "snippet": "This, a thousand times.  I'm on CentOS 6 and have switched to docker for some services that don't easily run on that OS.  However, I found out the hard way that docker isn't supported on CentOS 6, by having some crashes…"
+     "story": "Docker is weird",
+     "story_id": 50202681,
+     "snippet": "Love docker, it changed the development ecosystems for the better. In recent years I have shifted over to Podman, primarily because it defaults to rootless without a daemon. Is that something you considered for docker ea…"
     }
    ]
   },
   {
-   "name": "Fly.io",
-   "category": "Infra",
-   "url": "https://fly.io",
-   "commenters": 55,
-   "first_year": "2024",
+   "name": "bat",
+   "category": "Terminal",
+   "url": "https://github.com/sharkdp/bat",
+   "commenters": 8,
+   "first_year": "2014",
    "last_year": "2026",
-   "recent": 44,
+   "recent": 6,
    "comments": [
     {
-     "id": "50195792",
-     "author": "disconnection",
-     "date": "2026-10-22",
-     "points": 0,
-     "story": "Security Disclosure",
-     "story_id": 50188228,
-     "snippet": "…situation to not be able to cycle environment variables after such an event. \nI did an emergency migration to fly.io today with minimal disruption today. \nI’d recommend everyone to immediately migrate somewhere else ASAP…"
-    },
-    {
-     "id": "50067961",
-     "author": "mmoustafa",
-     "date": "2026-10-13",
-     "points": 0,
-     "story": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
-     "story_id": 50059096,
-     "snippet": "I think fly.io sprites is the closest price wise, would love to see it on the comparison list"
-    },
-    {
-     "id": "50060033",
-     "author": "christoff12",
-     "date": "2026-10-12",
-     "points": 0,
-     "story": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
-     "story_id": 50059096,
-     "snippet": "…have some experimentation planned for a new gig I'm starting in a week. How would you compare what you do to fly.io's Sprites (which is currently atop my To Try list)?"
-    },
-    {
-     "id": "49951256",
-     "author": "tomjen3",
-     "date": "2026-10-04",
-     "points": 0,
-     "story": "We're going to need default hard budget caps on pretty much everything",
-     "story_id": 49949235,
-     "snippet": "…sion maker you have to appeal to and that person really likes to try new stuff. That's why you can get a free fly.io and why we all use Tailscale. And it works too — if I was in charge and needed it, I would immediately…"
-    },
-    {
-     "id": "49791411",
-     "author": "hbcondo714",
-     "date": "2026-09-21",
-     "points": 0,
-     "story": "Python Workers are now generally available",
-     "story_id": 49787142,
-     "snippet": "Thanks, we've been using firecracker VMs with AWS MicroVM[1] and Fly.io Sprites[1] but interested in using Workers instead [1]  https://news.ycombinator.com/item?id=48642510  [2]  https://news.ycombinator.com/item?id=465…"
-    },
-    {
-     "id": "49427879",
-     "author": "adesh_nalpet",
-     "date": "2026-08-25",
-     "points": 0,
-     "story": "Show HN: PicoMQ – Durable Streams over HTTP, on object storage",
-     "story_id": 49421806,
-     "snippet": "…nd an open-protocol was a good decision. If you'd like to consider using PicoMQ, I have examples to deploy on Fly.io and AWS. ursula.tonbo.io is also a good option to try."
-    },
-    {
-     "id": "49053200",
-     "author": "simonw",
-     "date": "2026-07-26",
-     "points": 0,
-     "story": "Turn And Face The Strange",
-     "story_id": 49051369,
-     "snippet": "Try this:  https://hn.algolia.com/api/v1/search_by_date?query=fly.io&re..."
-    },
-    {
-     "id": "48186094",
-     "author": "vovavili",
+     "id": "48180639",
+     "author": "backscratches",
      "date": "2026-05-18",
      "points": 0,
      "story": "Show HN: Files.md – Open-source alternative to Obsidian",
      "story_id": 48179677,
-     "snippet": "…would recommend using it or other third-party alternatives to my non-technical friends. The initial setup and fly.io setup was worth me saving ~50 Euro/year, but I doubt that holds for my less technically inclined peers."
+     "snippet": "…te detail all with only a few taps. All of your standard open source terminal tools work with it, difftastic, bat/cat, zoxide/CD, ripgrep, fzf, git, LLMs, encryption, sync, etc etc. I use yazi for a visual filepicker and…"
     },
     {
-     "id": "48121721",
-     "author": "eblume",
-     "date": "2026-05-13",
+     "id": "48136711",
+     "author": "Sasha_2040",
+     "date": "2026-05-14",
      "points": 0,
-     "story": "Leaving GitHub for Forgejo",
-     "story_id": 48121266,
-     "snippet": "Yup, I’ve done this. I use a fly.io proxy that runs nginx, fail2ban, and that forwards to my tailnet where Caddy resolves to the actual instance. It’s critical that you disable local registration - I have authentik (only…"
+     "story": "AI is making it easy but also hard",
+     "story_id": 48123687,
+     "snippet": "…ild something bigger - AI which we have currently still cannot do that. Who knows what we will get in a year, bat barrier definnetely will become less and less. So what becomes really important (it was always important,…"
     },
     {
-     "id": "47877229",
-     "author": "pclark",
-     "date": "2026-04-23",
+     "id": "47788488",
+     "author": "thegdsks",
+     "date": "2026-04-16",
      "points": 0,
-     "story": "I am building a cloud",
-     "story_id": 47872324,
-     "snippet": "I think I am interested in this? I run a bunch of small web apps, currently as fly.io machines. I love fly, but it adds up when I have a bunch of small things that I want isolated — I wish I could have even smaller Fly i…"
+     "story": "I made a terminal pager",
+     "story_id": 47786164,
+     "snippet": "How does this compare to less with syntax highlighting? I've been using bat as a pager (bat --paging=always) and it covers most of what I need. Curious what the advantage is for larger files."
     },
     {
-     "id": "47672698",
-     "author": "bovermyer",
-     "date": "2026-04-07",
-     "points": 0,
-     "story": "Dear Heroku: Uhh What's Going On?",
-     "story_id": 47669749,
-     "snippet": "I long ago switched to Fly.io. It feels like the old days of Heroku."
-    },
-    {
-     "id": "47561667",
-     "author": "tpaschalis",
-     "date": "2026-03-29",
-     "points": 0,
-     "story": "I turned my Kindle into my own personal newspaper",
-     "story_id": 47541969,
-     "snippet": "…s I settled on a a different approach for my old Kobo. It can connect to Dropbox so I deployed a small app in Fly.io which takes a link, bundles it as an epub and uploads to the right folder. Day-to-day all I use is a bo…"
-    }
-   ]
-  },
-  {
-   "name": "Alfred",
-   "category": "Productivity",
-   "url": "https://www.alfredapp.com",
-   "commenters": 52,
-   "first_year": "2010",
-   "last_year": "2026",
-   "recent": 16,
-   "comments": [
-    {
-     "id": "50115323",
-     "author": "GeneralMaximus",
-     "date": "2026-10-16",
-     "points": 0,
-     "story": "AI is driving a boom in modestly successful software projects",
-     "story_id": 50115251,
-     "snippet": "…s to solve all the niggling little problems I have with the software I use on the daily. Think shell scripts, Alfred workflows, Elisp functions, and Obsidian plugins. Claude Code/Codex has made my entire macOS environmen…"
-    },
-    {
-     "id": "49707052",
-     "author": "x3n0ph3n3",
-     "date": "2026-09-15",
-     "points": 0,
-     "story": "iOS 27, iPadOS 27, and macOS 27",
-     "story_id": 49701004,
-     "snippet": "This is why I use Alfred instead of spotlight.  https://www.alfredapp.com/"
-    },
-    {
-     "id": "49705922",
-     "author": "josephg",
-     "date": "2026-09-14",
-     "points": 0,
-     "story": "iOS 27, iPadOS 27, and macOS 27",
-     "story_id": 49701004,
-     "snippet": "…t entirely and replaced it with 3rd party software. I couldn’t be happier with my choice. Check out Raycast / Alfred."
-    },
-    {
-     "id": "47630426",
-     "author": "jasomill",
-     "date": "2026-04-03",
-     "points": 0,
-     "story": "Show HN: Apfel – The free AI already on your Mac",
-     "story_id": 47624645,
-     "snippet": "I've used Alfred[1] for many years on macOS, and more recently the PowerToys Command Palette[2] on Windows. Both are easily extensible, so you could certainly wire either up to the local (or hosted) LLM of your choice. S…"
-    },
-    {
-     "id": "47326117",
-     "author": "ewoodrich",
-     "date": "2026-03-10",
-     "points": 0,
-     "story": "I don't know Apple's endgame for the Fn/Globe key–or if Apple does",
-     "story_id": 47311647,
-     "snippet": "…ectly in Linux distros but sometimes have to remap it with config files or a helper tool. On my MacBook I use Alfred now for search and Win11Debloat for Windows which ensures apps load near instantly when typing."
-    },
-    {
-     "id": "47255445",
-     "author": "danpalmer",
-     "date": "2026-03-04",
-     "points": 0,
-     "story": "Glaze by Raycast",
-     "story_id": 47247033,
-     "snippet": "…t as an individual user or not though is a fair question. I was a heavy user, but I recently switched back to Alfred. I love both, and there are things I think Raycast does much better than Alfred, but ultimately I'm not…"
-    },
-    {
-     "id": "46592678",
-     "author": "rvnikita",
-     "date": "2026-01-12",
-     "points": 0,
-     "story": "One-Click Claude Code Account Switching with Alfred",
-     "story_id": 46592677,
-     "snippet": "I built a small Alfred workflow to switch between multiple Claude Code accounts in one click. I use multiple cheaper accounts instead of a single expensive plan and got tired of manually changing configs and scripts. Wra…"
-    },
-    {
-     "id": "46217392",
-     "author": "AlphaCeo",
-     "date": "2025-12-10",
-     "points": 0,
-     "story": "[dead]",
-     "story_id": 46217391,
-     "snippet": "…ts own datasets, constraints, and reasoning stack, debating until the system reaches a conclusion. We call it Alfred. Most consumer “AI trading tools” are wrappers around a base model. Ours is a multi-agent financial ana…"
-    },
-    {
-     "id": "46217049",
-     "author": "burnto",
-     "date": "2025-12-10",
-     "points": 0,
-     "story": "Making macOS Bearable",
-     "story_id": 46213385,
-     "snippet": "Quicksilver was a revelation.  I use Raycast now and Alfred is great too. I don’t use spaces or Mission Control or tiling. But I’ve been using macs since the late 80s and most of that stuff just seems superfluous. The fa…"
-    },
-    {
-     "id": "46213957",
-     "author": "D13Fd",
-     "date": "2025-12-10",
-     "points": 0,
-     "story": "Making macOS Bearable",
-     "story_id": 46213385,
-     "snippet": "I use Alfred a ton throughout the day. I have many workflows and other settings that I set up years ago that are absolutely indispensable to me. I deal with a huge number of different projects at work, for example. I hav…"
-    },
-    {
-     "id": "46213762",
-     "author": "daveidol",
-     "date": "2025-12-10",
-     "points": 0,
-     "story": "Making macOS Bearable",
-     "story_id": 46213385,
-     "snippet": "I’ve been using Alfred for forever, but with the new Spotlight on Tahoe I’ve decided to just try using Spotlight alone. So far I’ve been pretty happy with it. But I was never a heavy user of the Alfred power features (de…"
-    },
-    {
-     "id": "46213554",
-     "author": "tptacek",
-     "date": "2025-12-10",
-     "points": 0,
-     "story": "Making macOS Bearable",
-     "story_id": 46213385,
-     "snippet": "I'm never going to use a tiling window manager, but I also never touch Mission Control (or Spotlight). I use Alfred.app to call things up; before Alfred.app, all the way back into the early aughts, I was using Quicksilve…"
-    }
-   ]
-  },
-  {
-   "name": "asdf",
-   "category": "Dev tooling",
-   "url": "https://asdf-vm.com",
-   "commenters": 40,
-   "first_year": "2022",
-   "last_year": "2026",
-   "recent": 16,
-   "comments": [
-    {
-     "id": "49684384",
-     "author": "doodlesdev",
-     "date": "2026-09-13",
-     "points": 0,
-     "story": "Homebrew 7.0.0",
-     "story_id": 49681545,
-     "snippet": "…, but truthfully the bus factor here especially doesn't matter much, as mise is an easy tool to replace (with asdf, for example) if something goes wrong with it eventually. I highly recommend trying it out. I resisted us…"
-    },
-    {
-     "id": "48497561",
-     "author": "jeremyjh",
-     "date": "2026-06-11",
-     "points": 0,
-     "story": "Show HN: Homebrew 6.0.0",
-     "story_id": 48490024,
-     "snippet": "mise use -g ripgrep@latest I recently found mise and have become a fan as well. I have used asdf for about a decade and it supports the same .tool-versions files so initially I used it for those exact same things. But I…"
-    },
-    {
-     "id": "47650547",
-     "author": "syhol",
+     "id": "47645215",
+     "author": "vector_spaces",
      "date": "2026-04-05",
      "points": 0,
-     "story": "Show HN: Home Maker: Declare Your Dev Tools in a Makefile",
-     "story_id": 47560959,
-     "snippet": "…ble with standard mise backends. 99% of dev tools I use don't require a plugin. > (more painful than, say, an asdf plugin) You can still use asdf plugins, I could use mise to install an asdf plugin right now with one lin…"
+     "story": "Advice to young people, the lies I tell myself (2024)",
+     "story_id": 47644566,
+     "snippet": "…\"lucky\" and \"unlucky\" people (truly sounds like science). And for the love of God don't tell me right off the bat that you assume I'm going to keep reading, let alone read closely enough to \"notice\" anything about your w…"
     },
     {
-     "id": "47293383",
-     "author": "eudamoniac",
-     "date": "2026-03-08",
+     "id": "47374032",
+     "author": "szopa",
+     "date": "2026-03-14",
      "points": 0,
-     "story": "A decade of Docker containers",
-     "story_id": 47289311,
-     "snippet": "…containerization in the real world. I just install my dependencies with good old fashioned version managers (asdf) and I develop the project. I ignore all docker documentation, and everything works fine. When I try to u…"
+     "story": "Emacs and Vim in the Age of AI",
+     "story_id": 47319071,
+     "snippet": "…hings I was jealous about vim, BUT it has sane defaults ootb. And truth be told, another thing I use a lot is bat, which is cat with syntax highlighting and an automatic pager."
     },
     {
-     "id": "46488027",
-     "author": "hesyiah",
-     "date": "2026-01-04",
+     "id": "47062880",
+     "author": "crimsoneer",
+     "date": "2026-02-18",
      "points": 0,
-     "story": "Jeffgeerling.com has been migrated to Hugo",
-     "story_id": 46487498,
-     "snippet": "Instead of committing the binary, I highly recommend using a .tool-versions file (if you use asdf or mise) or a Dockerfile with a pinned version."
+     "story": "Claude Sonnet 4.6",
+     "story_id": 47050488,
+     "snippet": "…ng\" (in that we all have a bunch of mental shortcuts we use for maths, and sometimes they lead us astray). \"A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?\" And…"
     },
     {
-     "id": "46460561",
-     "author": "chao-",
-     "date": "2026-01-02",
+     "id": "7658379",
+     "author": "aray",
+     "date": "2014-04-28",
      "points": 0,
-     "story": "Can Bundler be as fast as uv?",
-     "story_id": 46458302,
-     "snippet": "…ting workflow felt basically the same once I got used to the differences. At this point I've used rbenv, rvm, asdf, mise, and one other whose name isn't coming to mind. Not to mention docker containers, with or without a…"
+     "story": "Ask HN: Do you own a 3d printer? What has been your experience?",
+     "story_id": 7657899,
+     "snippet": "…unch of us students tried to do a group build of the RepRap Huxleys.  It was way too much work to try off the bat in order to get a working printer. After a run-in with a RepRap Mondo (it's big but it has a lot of issues…"
     },
     {
-     "id": "46459629",
-     "author": "riffraff",
-     "date": "2026-01-01",
+     "id": "7125872",
+     "author": "chimeracoder",
+     "date": "2014-01-26",
      "points": 0,
-     "story": "Can Bundler be as fast as uv?",
-     "story_id": 46458302,
-     "snippet": "…your issue? I've been using rvm for a decade(?) without any major pain. Cross-language tools such as mise or asdf also seem to work ok. I can relate to the \"I wish we didn't need a second tool\", but it doesn't seem like…"
-    },
-    {
-     "id": "45907855",
-     "author": "0xbadcafebee",
-     "date": "2025-11-12",
-     "points": 0,
-     "story": "Homebrew no longer allows bypassing Gatekeeper for unsigned/unnotarized software",
-     "story_id": 45907259,
-     "snippet": "…ith users' needs, all in order to live up to the personal preferences of the project leads. Personally I use  asdf  to manage my software on Macs. It too has also changed its design recently to become user-hostile (the c…"
-    },
-    {
-     "id": "45492520",
-     "author": "jauntywundrkind",
-     "date": "2025-10-06",
-     "points": 0,
-     "story": "Mise: Monorepo Tasks",
-     "story_id": 45491621,
-     "snippet": "…grow and grow. Others have noted they encountered it first as a direnv replacement. At my last job it was an asdf tool-installer replacement. It's also a task and now mono-repo task runner. It feels a little fragile to…"
-    },
-    {
-     "id": "45090259",
-     "author": "digianarchist",
-     "date": "2025-09-01",
-     "points": 0,
-     "story": "Jujutsu for everyone",
-     "story_id": 45083952,
-     "snippet": "If you use asdf mise is worth a look. I use uv directly."
-    },
-    {
-     "id": "45032462",
-     "author": "jemmyw",
-     "date": "2025-08-26",
-     "points": 0,
-     "story": "Rv, a new kind of Ruby management tool",
-     "story_id": 45023730,
-     "snippet": "…y useful if Ruby is the only language you use. I have to manage several runtimes for most projects. I've used asdf for years and recently switched to mise: these tools already download pre compiled binaries for Ruby, plu…"
-    },
-    {
-     "id": "44415674",
-     "author": "sergiotapia",
-     "date": "2025-06-29",
-     "points": 0,
-     "story": "Tools I love: mise(-en-place)",
-     "story_id": 44414987,
-     "snippet": "Interesting thank you for sharing. I've been using asdf for years now but I dislike the fact that you have to install plugins. I wish it just did stuff when I called commands. I'll try out Mise for Elixir, Erlang and Nod…"
-    }
-   ]
-  },
-  {
-   "name": "fd",
-   "category": "Terminal",
-   "url": "https://github.com/sharkdp/fd",
-   "commenters": 16,
-   "first_year": "2014",
-   "last_year": "2026",
-   "recent": 9,
-   "comments": [
-    {
-     "id": "49363545",
-     "author": "hiAndrewQuinn",
-     "date": "2026-08-19",
-     "points": 0,
-     "story": "Ask HN: What is your favorite lightweight tool or CLI utility in 2026?",
-     "story_id": 49314700,
-     "snippet": "…https://github.com/hiAndrewQuinn/shell-bling-ubuntu  Looking over this list I would recommend you check out `fd`, a much faster `find` with an interface that actually fits how people tend to use the tool. `lnav` is also…"
-    },
-    {
-     "id": "49171746",
-     "author": "chime",
-     "date": "2026-08-04",
-     "points": 0,
-     "story": "Keyv and friends compromised in active Shai-Hulud supply chain attack",
-     "story_id": 49166874,
-     "snippet": "Highly recommend `fd` for the sheer speed:       fd -HI \"^(setup\\.mjs|Math_Symbol\\.js|math_init\\.js)$\"\n  \n1.  https://github.com/sharkdp/fd  2. `brew install fd`"
-    },
-    {
-     "id": "48992796",
-     "author": "jimmaswell",
-     "date": "2026-07-21",
-     "points": 0,
-     "story": "I wrote an bash enumerator because I was sick of xargs",
-     "story_id": 48984270,
-     "snippet": "> Find works, but the syntax is arcane. fd is a lifesaver:  https://github.com/sharkdp/fd"
-    },
-    {
-     "id": "48798893",
-     "author": "skydhash",
-     "date": "2026-07-05",
-     "points": 0,
-     "story": "Ask HN: Good fast IDE for reading and navigating code in multiple languages",
-     "story_id": 48792671,
-     "snippet": "…the `rgrep` command but the plugin presents a nicer interface. With no Emacs, I use `ripgrep` (sometimes with fd for the file candidates) and `less`. I only bother with LSP for projects I'm currently working on. Even the…"
-    },
-    {
-     "id": "48334626",
-     "author": "saidnooneever",
-     "date": "2026-05-30",
-     "points": 0,
-     "story": "It's hard to justify buying a Framework 12",
-     "story_id": 48323869,
-     "snippet": "…run my editors code all day myself its all gd..use firefox as browser on both. other then that its x,i3,hx,rg,fd,fzf. thats about all i use..(so u see i hate it when any laptop empties soon.... i hardly use anything of i…"
-    },
-    {
-     "id": "46794570",
-     "author": "spiffytech",
-     "date": "2026-01-28",
-     "points": 0,
-     "story": "Make.ts",
-     "story_id": 46792194,
-     "snippet": "I can't believe how long I was sleeping on fd and zoxide. zoxide is now one of my top commands, and fd feels like when I switched to ripgrep. So fast and easy there's no reason not to run it."
-    },
-    {
-     "id": "46667350",
-     "author": "girvo",
-     "date": "2026-01-18",
-     "points": 0,
-     "story": "We put Claude Code in Rollercoaster Tycoon",
-     "story_id": 46588972,
-     "snippet": "…l doesn’t need to scan for info, but again it really likes to try not to use it. Of course I still use rg and fd to traverse things, cli tools  are  powerful. I just wish LLMs could be made to use more powerful tools rel…"
-    },
-    {
-     "id": "46100901",
-     "author": "auxym",
-     "date": "2025-11-30",
-     "points": 0,
-     "story": "Ask HN: What open source projects are you grateful for?",
-     "story_id": 46071771,
-     "snippet": "…apps. I am grateful for Truenas, Jellyfin and pihole. So many cli apps that I use daily: - starship prompt\n- fd\n- ripgrep\n- fzf\n- lazygit\n- yazi Firefox gets sometimes deserved criticism, but I have been using it contin…"
-    },
-    {
-     "id": "45628264",
-     "author": "sshine",
-     "date": "2025-10-18",
-     "points": 0,
-     "story": "Ripgrep 15.0",
-     "story_id": 45627324,
-     "snippet": "…to retrain. But eventually I did switch to `rg` because it just has so many conveniences. I even switched to `fd` recently instead of `find` because it's easier and less typing for common use-cases. I've been using the t…"
-    },
-    {
-     "id": "35250620",
-     "author": "MayeulC",
-     "date": "2023-03-21",
-     "points": 0,
-     "story": "So you've installed `fzf` – now what?",
-     "story_id": 35248098,
-     "snippet": "…ll give it another try. In the same vein as ripgrep (rg), I recommand the author (and everybody else) to give fd-find (fd) a try as a replacement to find. It's much, much faster (multithreaded search), and has better def…"
-    },
-    {
-     "id": "29181104",
-     "author": "perihelions",
-     "date": "2021-11-10",
-     "points": 0,
-     "story": "Hop: Faster than unzip and tar at reading individual files",
-     "story_id": 29178710,
-     "snippet": "Speaking of faster coreutils replacements, I highly recommend ripgrep (rg) and fd-find (fd), which are Rust-based, incompatible replacements for grep and find. I know I'm way behind the popularity curve* (they're already…"
-    },
-    {
-     "id": "29015847",
-     "author": "claytonjy",
-     "date": "2021-10-27",
-     "points": 0,
-     "story": "Exa: An alternative to Ls",
-     "story_id": 29014279,
-     "snippet": "…been loving all the new rust-based CLI tools; you can find a lot of them here [0]. So far I've used ripgrep, fd-find, sd, exa, bat. I care less about speed and more about ease-of-use and beautiful output. Another bonus…"
+     "story": "A RESTful Micro-Framework in Go",
+     "story_id": 7125464,
+     "snippet": "…hing like it exists (in a stable form) for Golang. I wouldn't recommend newcomers to Go use SQL right off the bat. Document-based storage (like CouchDB or MongoDB), or even key/value (Redis, etc.) is much more aligned wi…"
     }
    ]
   }
