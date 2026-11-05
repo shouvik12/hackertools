@@ -117,7 +117,7 @@ SEED = [
     ("Raycast", "Productivity", "https://www.raycast.com", []),
     ("Alfred", "Productivity", "https://www.alfredapp.com", ["Alfred app"], True),
     ("Rectangle", "Productivity", "https://rectangleapp.com", ["Rectangle app"], True),
-    ("AeroSpace", "Productivity", "https://github.com/nikitabobko/AeroSpace", []),
+    ("AeroSpace", "Productivity", "https://github.com/nikitabobko/AeroSpace", [], True),
     ("Karabiner", "Productivity", "https://karabiner-elements.pqrs.org", ["Karabiner-Elements"]),
     ("Hammerspoon", "Productivity", "https://www.hammerspoon.org", []),
     ("AutoHotkey", "Productivity", "https://www.autohotkey.com", []),
@@ -159,6 +159,46 @@ CUE = re.compile(
     r"recommend|highly recommend|can't live without|cannot live without|swear by|love|favou?rite|"
     r"daily driver|go-to|my go to|game changer|life saver|lifesaver|check out|try|give .{0,20} a try|"
     r"best tool|use it every day|use it daily)\b", re.I)
+
+# Negative mentions never count.
+NEG = re.compile(
+    r"\b(never use|never using|stopped using|stop using|switched (away )?from|moved away from|"
+    r"gave up on|uninstalled|ditched|got rid of|avoid)\b", re.I)
+
+# Threads that list tools as job requirements, not recommendations.
+SKIP_STORY = re.compile(r"who is hiring|who wants to be hired|freelancer\? seeking", re.I)
+
+# Ambiguous names: the comment must also contain one of these context words.
+CONTEXT = {
+    "AeroSpace": r"tiling|window manager|macos|yabai|i3|workspace",
+    "Alfred": r"alfred ?app|launcher|spotlight|raycast|workflow|macos|hotkey",
+    "asdf": r"version manager|asdf install|tool-versions|asdf plugin|mise|nvm|pyenv|rbenv",
+    "fd": r"find|ripgrep|\brg\b|fd-find|sharkdp|fzf",
+    "bat": r"\bcat\b|syntax highlight|batcat|sharkdp|pager|less",
+    "delta": r"\bgit\b|diff|pager|git-delta",
+    "Fork": r"\bgit\b|client|sourcetree|gitkraken",
+    "Cursor": r"\bide\b|editor|vs ?code|copilot|ai",
+    "Caddy": r"nginx|reverse proxy|https|server|certificate|caddyfile",
+    "Calibre": r"e-?book|epub|kindle|kobo|library",
+    "Bruno": r"postman|insomnia|\bapi\b|http|request",
+}
+CONTEXT = {k: re.compile(v, re.I) for k, v in CONTEXT.items()}
+
+# Tool named right after one of these is the loser of a comparison ("better than X", "replaced X").
+LOSER = re.compile(r"(than|as good as|replaced|replacing|instead of|over|from|vs\.?|versus)[\s\w+/-]{0,12}$", re.I)
+
+NEAR = 120  # cue must sit within this many characters of the tool name
+
+
+def recommends(text, rx):
+    """True if some mention of the tool has a recommendation cue nearby and no negative cue."""
+    for m in rx.finditer(text):
+        if LOSER.search(text[max(0, m.start() - 30): m.start()]):
+            continue
+        win = text[max(0, m.start() - NEAR): m.end() + NEAR]
+        if CUE.search(win) and not NEG.search(win):
+            return True
+    return False
 
 TAG = re.compile(r"<[^>]+>")
 
@@ -214,7 +254,12 @@ def scan_tool(entry, pages):
                     continue
                 seen.add(cid)
                 text = clean(h.get("comment_text"))
-                if not rx.search(text) or not CUE.search(text):
+                if SKIP_STORY.search(h.get("story_title") or ""):
+                    continue
+                ctx = CONTEXT.get(name)
+                if ctx and not ctx.search(text):
+                    continue
+                if not recommends(text, rx):
                     continue
                 author = h.get("author")
                 if not author:
@@ -254,9 +299,13 @@ def main():
     ap.add_argument("--min", type=int, default=2)
     ap.add_argument("--pages", type=int, default=3, help="pages of 1000 comments per name")
     ap.add_argument("--out", default="tools.json")
+    ap.add_argument("--only", default="", help="comma-separated tool names to scan")
     a = ap.parse_args()
 
     seed = SEED[: a.limit] if a.limit else SEED
+    if a.only:
+        want = {n.strip().lower() for n in a.only.split(",")}
+        seed = [e for e in SEED if e[0].lower() in want]
     tools = []
     for i, entry in enumerate(seed, 1):
         print(f"[{i}/{len(seed)}] {entry[0]}", file=sys.stderr)

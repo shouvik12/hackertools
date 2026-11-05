@@ -2,7 +2,7 @@
 
 Developer tools that Hacker News commenters actually recommend, ranked by how many **different people** vouched for them. Every tool links back to the comments.
 
-Inspired by Karpathy's HackerTube (videos) and HackerBooks (books).
+Inspired by Karpathy's HackerTube (videos), and by [HackerBooks](https://hackerbooks.org) (books).
 
 ## How it works
 1. `scan_tools.py` searches HN comments for ~120 dev tools via the public HN Algolia API.
