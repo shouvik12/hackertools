@@ -164,7 +164,7 @@ CUE = re.compile(
 # Negative mentions never count.
 NEG = re.compile(
     r"\b(never use|never using|stopped using|stop using|switched (away )?from|moved away from|"
-    r"gave up on|uninstalled|ditched|got rid of|avoid|moved back to|went back to|migrate (away|somewhere else)|"
+    r"gave up on|uninstalled|ditched|got rid of|avoid|moved back to|went back to|switching back to|switched back to|migrate (away|somewhere else)|"
     r"lost (my )?trust|trust in)\b", re.I)
 
 # Threads that list tools as job requirements, not recommendations.
