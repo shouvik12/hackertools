@@ -164,7 +164,8 @@ CUE = re.compile(
 # Negative mentions never count.
 NEG = re.compile(
     r"\b(never use|never using|stopped using|stop using|switched (away )?from|moved away from|"
-    r"gave up on|uninstalled|ditched|got rid of|avoid)\b", re.I)
+    r"gave up on|uninstalled|ditched|got rid of|avoid|moved back to|went back to|migrate (away|somewhere else)|"
+    r"lost (my )?trust|trust in)\b", re.I)
 
 # Threads that list tools as job requirements, not recommendations.
 SKIP_STORY = re.compile(r"who is hiring|who wants to be hired|freelancer\? seeking", re.I)
@@ -176,7 +177,8 @@ CONTEXT = {
     "asdf": r"version manager|asdf install|tool-versions|asdf plugin|mise|nvm|pyenv|rbenv",
     "fd": r"find|ripgrep|\brg\b|fd-find|sharkdp|fzf",
     "bat": r"\bcat\b|syntax highlight|batcat|sharkdp|\bpager\b|\bless\b|\bfd\b|ripgrep",
-    "delta": r"\bgit\b|diff|pager|git-delta",
+    "delta": r"\bgit\b|\bdiffs?\b|\bpager\b|git-delta",
+    "fish shell": r"\bshell\b|\bzsh\b|\bbash\b|terminal|prompt|fisher|config\.fish",
     "Fork": r"\bgit\b|client|sourcetree|gitkraken",
     "Cursor": r"\bide\b|editor|vs ?code|copilot|ai",
     "Caddy": r"nginx|reverse proxy|https|server|certificate|caddyfile",
@@ -186,9 +188,25 @@ CONTEXT = {
 CONTEXT = {k: re.compile(v, re.I) for k, v in CONTEXT.items()}
 
 # Tool named right after one of these is the loser of a comparison ("better than X", "replaced X").
-LOSER = re.compile(r"(than|as good as|replaced|replacing|instead of|over|from|vs\.?|versus)[\s\w+/-]{0,12}$", re.I)
+LOSER = re.compile(r"(than|as good as|replaced|replacing|instead of|over|from|vs\.?|versus|after giving|after trying)[\s\w+/-]{0,12}$", re.I)
 
 NEAR = 120  # cue must sit within this many characters of the tool name
+
+
+STRONG = re.compile(r"\b(i use|i've been using|i love|love it|daily driver|highly recommend|i recommend|"
+    r"switched to|can't live without|swear by|my favou?rite|use it (every day|daily))\b", re.I)
+
+
+def quote_score(text, rx):
+    """How clearly the comment recommends the tool: a strong cue right next to the name scores highest."""
+    best = 0
+    for m in rx.finditer(text):
+        win = text[max(0, m.start() - 60): m.end() + 60]
+        if STRONG.search(win):
+            best = max(best, 2)
+        elif CUE.search(win):
+            best = max(best, 1)
+    return best
 
 
 def recommends(text, rx):
@@ -278,11 +296,11 @@ def scan_tool(entry, pages):
                         "story": h.get("story_title") or "",
                         "story_id": h.get("story_id"),
                         "snippet": snippet(text, rx),
+                        "score": quote_score(text, rx),
                     })
             if page + 1 >= data.get("nbPages", 0):
                 break
             time.sleep(0.25)
-    comments.sort(key=lambda c: c["date"], reverse=True)
     years = sorted({c["date"][:4] for c in comments if c["date"]})
     return {
         "name": name,
@@ -292,7 +310,9 @@ def scan_tool(entry, pages):
         "first_year": years[0] if years else None,
         "last_year": years[-1] if years else None,
         "recent": sum(1 for c in comments if c["date"] >= str(datetime.now().year - 1)),
-        "comments": comments[:12],
+        # Clearest recommendations first, newest within each level; score is only for sorting.
+        "comments": [{k: v for k, v in c.items() if k != "score"}
+                     for c in sorted(comments, key=lambda c: (c["score"], c["date"]), reverse=True)[:12]],
     }
 
 
