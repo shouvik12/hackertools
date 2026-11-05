@@ -174,13 +174,15 @@ async function load(){
 function stats(){
   if (!all.length) return;
   const top = [...all].sort((a,b)=>b.commenters-a.commenters)[0];
-  const hot = [...all].sort((a,b)=>b.recent-a.recent)[0];
+  // Hottest = biggest share of recent recommendations, among well-established tools, excluding #1.
+  const hot = [...all].filter(t => t.name !== top.name && t.commenters >= 50)
+    .sort((a,b)=>(b.recent/b.commenters)-(a.recent/a.commenters))[0] || top;
   const total = all.reduce((s,t)=>s+t.commenters,0);
   $("#stats").innerHTML = [
     [all.length, "tools tracked"],
     [total.toLocaleString(), "recommendations"],
     [top.name, `most recommended · ${top.commenters}`],
-    [hot.name, "hottest right now"],
+    [hot.name, `hottest right now · ${Math.round(100*hot.recent/hot.commenters)}% recent`],
   ].map(([b,s]) => `<div class="stat"><b title="${esc(b)}">${esc(b)}</b><span>${esc(s)}</span></div>`).join("");
 }
 
